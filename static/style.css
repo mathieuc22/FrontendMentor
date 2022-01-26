@@ -101,6 +101,7 @@ h1 {
 
 .card__info > * {
   display: flex;
+  flex: 1;
   height: 20px;
 }
 
@@ -113,18 +114,23 @@ h1 {
   font-weight: 600;
 }
 
+.card__time {
+  justify-content: end;
+}
+
 .card__footer {
   border-top: 1px solid var(--line);
   display: flex;
   padding-top: 15px;
   margin-top: 10px;
   font-size: 16px;
+  line-height: 30px;
 }
 
 .card__avatar-img {
   width: 30px;
-  filter: drop-shadow(1px 1px 0 var(--White)) 
-  drop-shadow(-1px -1px 0 var(--White));
+  border: 1px solid var(--White);
+  border-radius: 50%;
   margin-right: 15px;
 }
 
