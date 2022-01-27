@@ -15,46 +15,46 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; color: white; }
+    .attribution a { color: var(--Cyan); }
   </style>
 </head>
 <body>
 
-  <div class="card">
+  <main class="card" aria-label="Equilibrium NFT main card">
     <div class="card__img">
-      <img src="./images/image-equilibrium.jpg">
+      <img src="./images/image-equilibrium.jpg" alt="Equilibrium NFT logo">
       <div class="card__img-modal">
-        <img src="./images/icon-view.svg">
+        <img src="./images/icon-view.svg" alt="View icon">
       </div>
     </div>
     <div class="card__content">
       <h1 class="card__title">
         Equilibrium #3429
       </h1>
-      <div class="card__text">
+      <p class="card__text">
         Our Equilibrium collection promotes balance and calm.
-      </div>
+      </p>
       <div class="card__info">
         <div class="card__value">
-          <img src="./images/icon-ethereum.svg">
+          <img src="./images/icon-ethereum.svg" alt="Ethereum icon">
           0.041 ETH
         </div>
         <div class="card__time">
-          <img src="./images/icon-clock.svg">
+          <img src="./images/icon-clock.svg" alt="Clock icon">
           3 days left
         </div>
       </div>
       <div class="card__footer">
-          <img class="card__avatar-img" src="./images/image-avatar.png">
-          Creation of <span class="card__avatar">Jules Wyvern</span>
+          <img class="card__avatar-img" src="./images/image-avatar.png" alt="NFT creator avatar icon">
+          Creation of <span class="card__avatar" aria-label="NFT creator name">Jules Wyvern</span>
       </div>
     </div>
-  </div>
+  </main>
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Nervous Buffalo</a>.
-  </div>
+  </footer>
 </body>
 </html>
