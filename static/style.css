@@ -60,6 +60,7 @@ p {
   height: 100%;
   top: 0;
   background: var(--TransparentCyan);
+  animation: fadein .5s;
 }
 
 .card__img-modal img {
@@ -75,6 +76,15 @@ p {
   color: var(--Cyan);
 }
 
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
 .card__title {
   color: var(--White);
   cursor: pointer;
@@ -82,6 +92,7 @@ p {
 
 .card__title:hover {
   color: var(--Cyan);
+  transition: color .5s;
 }
 
 .card__content {
@@ -132,7 +143,8 @@ p {
 }
 
 .card__avatar-img {
-  width: 30px;
+  max-width: 30px;
+  max-height: 30px;
   border: 1px solid var(--White);
   border-radius: 50%;
   margin-right: 15px;
@@ -140,17 +152,25 @@ p {
 
 .card__avatar {
   color: var(--White);
-  margin-left: 5px;
 }
 
 .card__avatar:hover {
   color: var(--Cyan);
   cursor: pointer;
+  transition: color .5s;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* If the screen size is 400px wide or less, set the font-size to 16px */
 @media screen and (max-width: 400px) {
   html, body {
     font-size: 16px;
+  }
+}
+
+/* If the screen size is 400px wide or less, set the font-size to 16px */
+@media screen and (max-width: 350px) {
+  .card__footer, .card__info {
+    font-size: 12px;
+    line-height: normal;
   }
 }
