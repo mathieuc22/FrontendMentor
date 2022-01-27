@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> 
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="static/style.css" />
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -16,54 +21,65 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__logo">
-      <img src="images/logo.svg" alt="sunnyside logo">
+    <img src="images/desktop/image-header.jpg" alt="header image" class="header_background">
+    <div class="header__content">
+      <nav class="header__navbar">
+        <div class="header__logo">
+          <img src="images/logo.svg" alt="sunnyside logo">
+        </div>
+        <ul class="header__links">
+          <li>About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <h1 class="header__title">We are creatives</h1>
+      <img src="images/icon-arrow-down.svg" alt="arrow down">
     </div>
-    <nav class="header__navbar">
-      About
-      Services
-      Projects
-      Contact
-    </nav>
-
-    <h1 class="header__tagline">We are creatives</h1>
-    <img src="images/icon-arrow-down.svg" alt="arrow down">
-    <img src="images/desktop/image-header.jpg" alt="header image">
   </header>
   <main>
     <section class="presentations">
       <article class="presentations__article">
-        <h2 class="presentations__title">Transform your brand</h2>
-        <p class="presentations__text">
-          We are a full-service creative agency specializing in helping brands grow fast. 
-          Engage your clients through compelling visuals that do most of the marketing for you.
-        </p>
-        <div class="presentations__more">Learn more</div>
-        <img src="images/desktop/image-transform.jpg" alt="transform image">
+        <div class="presentations__content">
+          <h2 class="presentations__title">Transform your brand</h2>
+          <p class="presentations__text">
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <div class="presentations__more">Learn more</div>
+        </div>
+        <img src="images/desktop/image-transform.jpg" alt="transform image" class="presentations__image">
       </article>
       <article class="presentations__article">
-        <h2 class="presentations__title">Stand out to the right audience</h2>
-        <p class="presentations__text">
-          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-        </p>
-        <div class="presentations__more">Learn more</div>
-        <img src="images/desktop/image-stand-out.jpg" alt="stand out image">
+        <img src="images/desktop/image-stand-out.jpg" alt="stand out image" class="presentations__image">
+        <div class="presentations__content">
+          <h2 class="presentations__title">Stand out to the right audience</h2>
+          <p class="presentations__text">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+          </p>
+          <div class="presentations__more">Learn more</div>
+        </div>
       </article>
     </section>
     <section class="services">
       <article class="services__article">
-        <h2 class="services__title">Graphic design</h2>
-        <p class="services__text">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-        </p>
-        <img src="images/desktop/image-graphic-design.jpg" alt="graphic design service illustration">
+        <img src="images/desktop/image-graphic-design.jpg" alt="graphic design service illustration" class="services__image">
+        <div class="services__content">
+          <h2 class="services__title">Graphic design</h2>
+          <p class="services__text">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+        </div>
       </article>
       <article class="services__article">
-        <h2 class="services__title">Photography</h2>
-        <p class="services__text">
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-        </p>
-        <img src="images/desktop/image-photography.jpg" alt="photography service illustration">
+        <img src="images/desktop/image-photography.jpg" alt="photography service illustration" class="services__image">
+        <div class="services__content services__content--blue">
+          <h2 class="services__title">Photography</h2>
+          <p class="services__text">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
       </article>
     </section>
     <section class="testimonials">
@@ -94,7 +110,7 @@
       <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="gallery sugarcubes">
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer__logo">
       <img src="images/logo.svg" alt="sunnyside logo">
     </div>
@@ -102,7 +118,6 @@
       About
       Services
       Projects
-      Contact
     </nav>
     <ul class="footer__social">
       <li class="footer_social-item">
