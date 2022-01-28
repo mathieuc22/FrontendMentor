@@ -60,15 +60,6 @@ ul {
   display: block;
 }
 
-.header__navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__links {
-  display: flex;
-}
-
 .header__content {
   position: absolute;
   top: 0;
@@ -76,14 +67,56 @@ ul {
   width: 100%;
 }
 
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin: 45px 0 0 40px;
+  width: 170px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__links {
+  display: flex;
+}
+
+.header__link {
+  margin: 25px;
+  margin-top: 30px;
+}
+
+.header__link--contact {
+  color: black;
+  font-family: 'Fraunces', serif;
+  text-transform: uppercase;
+  background-color: var(--White);
+  padding: 20px 30px;
+  margin-top: 12px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
 .header__title {
+  margin-top: 5%;
   font-family: 'Fraunces', serif;
   color: var(--White);
-  font-size: 42px;
+  font-size: 3.8vw;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
+}
+
+.header__arrow {
+  position: absolute;
+  /* top: calc(50% - 57px); */
+  left: calc(50% - 13px);
+  margin-top: -31vw;
 }
 
 /* section: Presentations */
