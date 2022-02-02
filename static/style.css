@@ -262,17 +262,42 @@ ul {
   width: 25%;
 }
 
-/* sections: Illustrations */
+/* sections: Footer */
 
 .footer {
-  background-color: var(--Darkmoderatecyan);
+  background-color: hsl(166.8,	44.16%,	69.8%);
   color: var(--Darkmoderatecyan);
   text-align: center;
   display: flex;
   flex-direction: column;
 }
 
+.footer__logo {
+  width: 170px;
+  height: 34px;
+  margin: 70px auto 0 auto;
+  background-color: hsl(166,	45%,	32%);
+  -webkit-mask: url(../images/logo.svg) center/170px no-repeat;
+  mask: url(../images/logo.svg) center/170px no-repeat;
+}
+
+.footer__nav {
+  display: flex;
+  margin: 45px auto;
+}
+
+.footer__link {
+  padding: 0 15px;
+  text-align: end;
+  width: 95px;
+}
+
 .footer__social {
   display: flex;
   justify-content: center;
+  margin: 45px 0;
+}
+
+.footer_social-item {
+  margin: 0 14px;
 }
