@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --MainText: hsl(193, 38%, 86%); /* LightCyan */
   --NeonGreen: hsl(150, 100%, 66%);
@@ -18,4 +24,52 @@ body {
   background-color: var(--MainBG);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  width: 540px;
+  height: 332px;
+  background-color: var(--DarkGrayishBlue);
+  border-radius: 13px;
+  text-align: center;
+  position: relative;
+}
+
+.card__content {
+  padding: 48px;
+  height: 100%;
+  width: 100%;
+}
+
+.card__content > * {
+  margin-bottom: 25px;
+}
+
+.card__title {
+  color: var(--NeonGreen);
+  font-size: 0.47rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.card__dice {
+  width: 64px;
+  height: 64px;
+  background-color: var(--NeonGreen);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
