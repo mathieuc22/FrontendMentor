@@ -1,0 +1,21 @@
+:root {
+  --MainText: hsl(193, 38%, 86%); /* LightCyan */
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --MainBG: hsl(218, 23%, 16%); /* DarkBlue */
+}
+
+html,
+body {
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--MainText);
+  background-color: var(--MainBG);
+  display: flex;
+  flex-direction: column;
+}
