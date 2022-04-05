@@ -38,7 +38,7 @@ async function refreshAdvice() {
  * Make the API call to refresh Advice
  */
 async function getAdvice() {
-  const response = await fetch(APIURL);
+  const response = await fetch(APIURL, {cache: 'no-cache'});
   const advice = await response.json();
   return advice;
 }
