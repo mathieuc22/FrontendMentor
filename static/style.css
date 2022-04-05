@@ -31,13 +31,13 @@ body {
   width: 540px;
   height: 332px;
   background-color: var(--DarkGrayishBlue);
-  border-radius: 13px;
+  border-radius: 15px;
   text-align: center;
   position: relative;
 }
 
 .card__content {
-  padding: 48px;
+  padding: 48px 42px;
   height: 100%;
   width: 100%;
 }
@@ -65,6 +65,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.card__dice:hover {
+  -webkit-box-shadow: 0px 0px 35px 1px var(--NeonGreen);
+  box-shadow: 0px 0px 35px 1px var(--NeonGreen);
 }
 
 .attribution {
