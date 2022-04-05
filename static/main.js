@@ -4,11 +4,16 @@ const APIURL = "https://api.adviceslip.com/advice";
 // Main
 document.addEventListener("DOMContentLoaded", function () {
   // Trigger API call on click
-  document
-    .querySelector(".card__dice")
-    .addEventListener("click", () => refreshAdvice());
+  document.querySelector(".card__dice").addEventListener("click", (event) => {
+    event.currentTarget.classList.add("card__dice--active");
+    // After the animation, reset everything to its default state
+    event.currentTarget.addEventListener('animationend', function(event){
+      event.currentTarget.classList.remove("card__dice--active");
+     });
+    refreshAdvice();
+  });
   // Refresh on start
-  refreshAdvice();
+  // refreshAdvice();
 });
 
 /**
@@ -20,15 +25,13 @@ async function refreshAdvice() {
   try {
     advice = await getAdvice();
   } catch {
-    sendError("Error during API call");
+    console.log("Error during API call");
     return;
   }
 
   // Refresh the html components
   document.querySelector(".card__id").innerHTML = advice.slip.id;
-  document.querySelector(
-    ".card__advice"
-  ).innerHTML = `<q>${advice.slip.advice}</q>`;
+  document.querySelector(".card__advice").innerHTML = `<q>${advice.slip.advice}</q>`;
 }
 
 /**

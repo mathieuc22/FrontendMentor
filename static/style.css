@@ -60,6 +60,8 @@ body {
 }
 
 .card__dice {
+  height: 64px;
+  width: 64px;
   padding: 20px;
   background-color: var(--NeonGreen);
   border-radius: 50%;
@@ -69,11 +71,27 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .card__dice:hover {
   -webkit-box-shadow: 0px 0px 35px 1px var(--NeonGreen);
   box-shadow: 0px 0px 35px 1px var(--NeonGreen);
+}
+
+.card__dice--active {
+  animation: InOut 1.8s ease-in-out;
+}
+
+@keyframes InOut {
+  0% {
+    -webkit-box-shadow: 0px 0px 35px 1px var(--NeonGreen);
+    box-shadow: 0px 0px 35px 1px var(--NeonGreen);
+  }
+  100% {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+  }
 }
 
 .attribution {
@@ -105,6 +123,7 @@ body {
 @media screen and (max-width: 540px) {
   html,
   body {
+    width: 100%;
     font-size: 24px;
     display: flex;
     flex-direction: row;
@@ -112,6 +131,7 @@ body {
   }
 
   .card {
+    display: unset;
     width: 100%;
     max-height: 300px;
     margin: 0 16px;
