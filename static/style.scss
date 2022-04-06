@@ -1,0 +1,44 @@
+// Variables
+
+// Colors
+$color-primary-DarkViolet: hsl(256, 26%, 20%);
+$color-primary-GrayishBlue: hsl(216, 30%, 68%);
+$color-neutral-VeryDarkViolet: hsl(270, 9%, 17%);
+$color-neutral-DarkGrayishViolet: hsl(273, 4%, 51%);
+$color-neutral-VeryLightGray: hsl(0, 0%, 98%);
+$color-mainBG: #fff;
+// Typography
+$font-size-default: 16px;
+$font-weight-default: 400;
+$font-family-default: 'Karla', sans-serif;
+$font-family-title: 'DM Serif Display', serif;
+
+// Base
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: auto;
+  padding: 0;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  color: $color-neutral-DarkGrayishViolet;
+  background-color: $color-mainBG;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
