@@ -10,15 +10,27 @@ $color-mainBG: #fff;
 // Typography
 $font-size-default: 16px;
 $font-weight-default: 400;
-$font-family-default: 'Karla', sans-serif;
-$font-family-title: 'DM Serif Display', serif;
+$font-family-default: "Karla", sans-serif;
+$font-family-title: "DM Serif Display", serif;
 
 // Base
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }
 
 html,
@@ -32,6 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .attribution {
@@ -39,4 +52,85 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.btn {
+  text-transform: capitalize;
+  padding: 12px 22px;
+  border: 2px solid $color-mainBG;
+}
+
+// Components
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 165px;
+  z-index: 2;
+  background-color: $color-mainBG;
+}
+
+.header-nav {
+  &__list {
+    display: flex;
+
+  }
+}
+
+main {
+  z-index: 1;
+}
+
+main > * {
+  padding: 0 165px;
+}
+
+.hero {
+  background-color: $color-primary-DarkViolet;
+  color: $color-mainBG;
+  display: flex;
+  height: 600px;
+  padding-top: 105px;
+  margin-bottom: 105px;
+  position: relative;
+  & > * {
+    width: 50%;
+  }
+  &__pattern {
+    position: absolute;
+    &--right {
+      right: 0;
+      top: -78px;
+      height: 580px;
+    }
+    &--left {
+      left: 0;
+      top: 0;
+      height: 510px;
+      width: 190px;
+    }
+  }
+  &__left {
+    margin-right: 35px;
+  }
+  &__right {
+    text-align: right;
+  }
+  &__title {
+    font-family: $font-family-title;
+    font-size: 72px;
+    line-height: 4rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+  &__text {
+    margin: 28px 0;
+    line-height: 1.61rem;
+  }
+}
+
+footer {
+  padding: 0 165px;
 }
