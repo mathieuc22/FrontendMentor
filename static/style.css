@@ -51,6 +51,8 @@ body {
   text-transform: capitalize;
   padding: 12px 22px;
   border: 2px solid #fff;
+  max-height: 50px;
+  z-index: 99;
 }
 
 .header {
@@ -137,7 +139,123 @@ main > * {
   line-height: 1.61rem;
 }
 
-footer {
-  padding: 0 165px;
+.different {
+  margin-top: 305px;
+  color: #2b272f;
+}
+
+.different__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 72px;
+  line-height: 4rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.different__list {
+  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.different-item {
+  margin-top: 100px;
+}
+
+.different-item__title {
+  margin-top: 40px;
+  font-family: "DM Serif Display", serif;
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.different-item__text {
+  margin-top: 24px;
+  font-size: 17px;
+  line-height: 26px;
+  color: #837d87;
+  text-align: justify;
+}
+
+.findout {
+  margin-top: 150px;
+}
+
+.findout__container {
+  color: #fff;
+  padding: 67px 80px;
+  background-color: #2d2640;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.findout__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 53px;
+  line-height: 4rem;
+  font-weight: 400;
+  max-width: 465px;
+  line-height: 58px;
+}
+
+.findout__pattern {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.footer {
+  margin-top: 150px;
+  padding: 60px 165px;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.footer__pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.links {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #837d87;
+  padding-top: 50px;
+}
+
+.link-card {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.link-card__title {
+  font-size: inherit;
+  margin-bottom: 36px;
+}
+
+.link-card__list {
+  color: #2b272f;
+  font-weight: 700;
+}
+
+.link-card__item {
+  margin-top: 16px;
 }
 /*# sourceMappingURL=style.css.map */
