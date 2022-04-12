@@ -227,7 +227,7 @@ main > * {
   z-index: 1;
 }
 
-.links {
+.footer__header {
   position: relative;
   z-index: 10;
   display: -webkit-box;
@@ -236,12 +236,30 @@ main > * {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 27px;
+  padding-top: 5px;
+}
+
+.footer__links {
+  position: relative;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-top: 1px solid #837d87;
   padding-top: 50px;
 }
 
+.social__icon {
+  margin-left: 12px;
+}
+
 .link-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-transform: uppercase;
+  letter-spacing: 1.7px;
   font-size: 13px;
 }
 
