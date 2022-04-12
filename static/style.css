@@ -56,6 +56,13 @@ body {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 1.7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #2b272f;
 }
 
 .btn--dark {
@@ -63,8 +70,17 @@ body {
   border: 2px solid #2b272f;
 }
 
+.btn--dark:hover {
+  background-color: #2b272f;
+  color: #fff;
+}
+
 .btn--header {
   padding-left: 0;
+}
+
+.btn--header:hover {
+  color: #2b272f;
 }
 
 .divider {
@@ -278,6 +294,16 @@ main > * {
   margin-left: 12px;
 }
 
+.social__link {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.social__link:hover {
+  -webkit-filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(496%) hue-rotate(210deg) brightness(95%) contrast(88%);
+          filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(496%) hue-rotate(210deg) brightness(95%) contrast(88%);
+}
+
 .link-card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -299,5 +325,9 @@ main > * {
 
 .link-card__item {
   margin-top: 16px;
+}
+
+.link-card__item:hover {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

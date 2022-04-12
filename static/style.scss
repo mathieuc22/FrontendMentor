@@ -62,12 +62,24 @@ body {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 1.7px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $color-mainBG;
+    color: $color-neutral-VeryDarkViolet;
+  }
   &--dark {
     color: $color-neutral-VeryDarkViolet;
     border: 2px solid $color-neutral-VeryDarkViolet;
+    &:hover {
+      background-color: $color-neutral-VeryDarkViolet;
+      color: $color-mainBG;
+    }
   }
   &--header {
     padding-left: 0;
+    &:hover {
+      color: $color-neutral-VeryDarkViolet;
+    }
   }
 }
 
@@ -241,6 +253,12 @@ main > * {
   &__icon {
     margin-left: 12px;
   }
+  &__link {
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(496%) hue-rotate(210deg) brightness(95%) contrast(88%);
+    }
+  }
 }
 
 .link-card {
@@ -258,5 +276,8 @@ main > * {
   }
   &__item {
     margin-top: 16px;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
