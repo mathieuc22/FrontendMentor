@@ -67,6 +67,16 @@ body {
   padding-left: 0;
 }
 
+.divider {
+  width: 150px;
+  height: 64px;
+  border-top: 1px solid #fff;
+}
+
+.divider--dark {
+  border-top: 1px solid #837d87;
+}
+
 .header {
   height: 80px;
   display: -webkit-box;
@@ -125,7 +135,7 @@ main > * {
 
 .hero__pattern--left {
   left: 0;
-  top: 0;
+  bottom: -56%;
   height: 510px;
   width: 190px;
 }
@@ -165,29 +175,31 @@ main > * {
 }
 
 .different__list {
-  gap: 30px;
+  gap: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .different-item {
-  margin-top: 100px;
+  margin-top: 96px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .different-item__title {
-  margin-top: 40px;
+  margin-top: 29px;
   font-family: "DM Serif Display", serif;
   font-size: 27px;
   font-weight: 400;
 }
 
 .different-item__text {
-  margin-top: 24px;
-  font-size: 17px;
+  margin-top: 16px;
+  font-size: 16px;
   line-height: 26px;
   color: #837d87;
-  text-align: justify;
 }
 
 .findout {

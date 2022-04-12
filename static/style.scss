@@ -71,6 +71,15 @@ body {
   }
 }
 
+.divider {
+  width: 150px;
+  height: 64px;
+  border-top: 1px solid $color-mainBG;
+  &--dark {
+    border-top: 1px solid $color-neutral-DarkGrayishViolet;
+  }
+}
+
 // Components
 
 .header {
@@ -117,7 +126,7 @@ main > * {
     }
     &--left {
       left: 0;
-      top: 0;
+      bottom: -56%;
       height: 510px;
       width: 190px;
     }
@@ -152,25 +161,25 @@ main > * {
     letter-spacing: -1px;
   }
   &__list {
-    gap: 30px;
+    gap: 25px;
     display: flex;
   }
 }
 
 .different-item {
-  margin-top: 100px;
+  margin-top: 96px;
+  flex: 1;
   &__title {
-    margin-top: 40px;
+    margin-top: 29px;
     font-family: $font-family-title;
     font-size: 27px;
     font-weight: 400;
   }
   &__text {
-    margin-top: 24px;
-    font-size: 17px;
+    margin-top: 16px;
+    font-size: 16px;
     line-height: 26px;
     color: $color-neutral-DarkGrayishViolet;
-    text-align: justify;
   }
 }
 
