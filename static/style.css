@@ -226,12 +226,12 @@ body.modal-open {
   overflow: hidden;
 }
 
-.header-nav-toggle {
+.mobile-nav-toggle {
   display: none;
 }
 
 @media screen and (max-width: 500px) {
-  .header-nav-toggle {
+  .mobile-nav-toggle {
     display: block;
   }
 }

@@ -202,7 +202,7 @@ body.modal-open  {
   overflow: hidden;
 }
 
-.header-nav-toggle {
+.mobile-nav-toggle {
   display: none;
   @include media-max(phone) {
     display: block;
