@@ -109,6 +109,19 @@ body {
   }
 }
 
+.animation {
+  animation: InOut 0.4s ease-in-out;
+}
+
+@keyframes InOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 // Components
 
 .header {
@@ -142,6 +155,9 @@ body {
   height: calc(100vh - 80px);
   width: 100%;
   background-color: $color-neutral-VeryDarkViolet;
+  &--show {
+    display: block;
+  }
   &__list {
     display: flex;
     flex-direction: column;
