@@ -30,6 +30,19 @@ $breakpoints: (
   }
 }
 
+@mixin default-padding() {
+  padding: 0 165px;
+  @include media-max(desktop-down) {
+    padding: 0 10%;
+  }
+  @include media-max(desktop-up) {
+    padding: 0 5%;
+  }
+  @include media-max(phone) {
+    padding: 0 20px;
+  }
+}
+
 // Base
 
 *,
@@ -132,16 +145,14 @@ body {
   padding: 0 165px;
   z-index: 2;
   background-color: $color-mainBG;
-  @include media-max(phone) {
-    padding: 0 24px;
-  }
+  @include default-padding()
 }
 
 .header-nav {
   &__list {
     display: flex;
   }
-  @include media-max(phone) {
+  @include media-max(desktop-up) {
     display: none;
   }
 }
@@ -195,6 +206,8 @@ body {
   &__pattern {
     position: absolute;
     bottom: 0;
+    height: 218px;
+    width: 100%;
   }
 }
 
@@ -204,7 +217,7 @@ body.modal-open  {
 
 .mobile-nav-toggle {
   display: none;
-  @include media-max(phone) {
+  @include media-max(desktop-up) {
     display: block;
   }
 }
@@ -214,10 +227,7 @@ main {
 }
 
 main > * {
-  padding: 0 165px;
-  @include media-max(phone) {
-    padding: 0 20px;
-  }
+  @include default-padding()
 }
 
 .hero {
@@ -296,8 +306,14 @@ main > * {
     text-align: right;
   }
   &__intro {
+    width: 100%;
+    max-width: 540px;
     @include media-max(phone) {
       display: none;
+    }
+    @include media-max(desktop-up) {
+      height: 90%;
+      object-fit: cover;
     }
     &--mobile {
       display: none;
@@ -315,9 +331,11 @@ main > * {
     letter-spacing: -1px;
     @include media-max(widescreen-up) {
       font-size: 3.5rem;
+      line-height: 3rem;
     }
     @include media-max(desktop-down) {
       font-size: 3rem;
+      line-height: 3rem;
     }
     @include media-max(phone) {
       font-size: 49px;
@@ -340,12 +358,15 @@ main > * {
 .different {
   margin-top: 305px;
   color: $color-neutral-VeryDarkViolet;
-  @include media-max(phone) {
+  @include media-max(desktop-down) {
+    margin-top: 10%;
+  }
+  @include media-max(tablet-up) {
     margin-top: 140px;
     text-align: center;
   }
   &__divider {
-    @include media-max(phone) {
+    @include media-max(tablet-up) {
       height: 33px;
       margin: auto;
     }
@@ -356,6 +377,14 @@ main > * {
     line-height: 4rem;
     font-weight: 400;
     letter-spacing: -1px;
+    @include media-max(widescreen-up) {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
+    @include media-max(desktop-down) {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
     @include media-max(phone) {
       font-size: 49px;
     }
@@ -363,7 +392,7 @@ main > * {
   &__list {
     gap: 25px;
     display: flex;
-    @include media-max(phone) {
+    @include media-max(tablet-up) {
       gap: unset;
       flex-direction: column;
       margin-top: 14px;
@@ -374,7 +403,7 @@ main > * {
 .different-item {
   margin-top: 96px;
   flex: 1;
-  @include media-max(phone) {
+  @include media-max(tablet-up) {
     margin-top: 57px;
   }
   &__title {
@@ -401,7 +430,7 @@ main > * {
     justify-content: space-between;
     position: relative;
     align-items: center;
-    @include media-max(phone) {
+    @include media-max(desktop-up) {
       flex-direction: column;
       text-align: center;
       padding: 72px 0;
@@ -417,7 +446,7 @@ main > * {
     line-height: 58px;
     z-index: 20;
     position: relative;
-    @include media-max(phone) {
+    @include media-max(desktop-up) {
       font-size: 40px;
       line-height: 40px;
       margin-bottom: 40px;
@@ -427,12 +456,12 @@ main > * {
     position: absolute;
     right: 0;
     top: 0;
-    @include media-max(phone) {
+    @include media-max(desktop-up) {
       display: none;
     }
     &--mobile {
       display: none;
-      @include media-max(phone) {
+      @include media-max(desktop-up) {
         display: block;
         height: 92%;
       }
@@ -441,26 +470,29 @@ main > * {
 }
 
 .footer {
+  @include default-padding();
   margin-top: 150px;
-  padding: 75px 165px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   background-color: $color-neutral-VeryLightGray;
   position: relative;
-  @include media-max(phone) {
+  @include media-max(tablet-up) {
     margin-top: 140px;
     text-align: center;
-    padding: 60px 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   &__pattern {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
-    @include media-max(phone) {
+    @include media-max(tablet-up) {
       display: none;
     }
     &--mobile {
       display: none;
-      @include media-max(phone) {
+      @include media-max(tablet-up) {
         display: block;
         width: 100%;
       }
@@ -485,7 +517,7 @@ main > * {
     display: flex;
     border-top: 1px solid $color-neutral-DarkGrayishViolet;
     padding-top: 50px;
-    @include media-max(phone) {
+    @include media-max(tablet-up) {
       flex-direction: column;
       padding-top: unset;
     }
@@ -513,7 +545,7 @@ main > * {
   text-transform: uppercase;
   letter-spacing: 1.7px;
   font-size: 13px;
-  @include media-max(phone) {
+  @include media-max(tablet-up) {
     padding-top: 40px;
   }
   &__title {
