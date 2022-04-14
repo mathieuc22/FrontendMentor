@@ -387,20 +387,17 @@ main > * {
   }
   &__title {
     font-family: $font-family-title;
-    font-size: 72px;
+    font-size: 4.5rem;
     line-height: 4rem;
     font-weight: 400;
     letter-spacing: -1px;
-    @include media-max(widescreen-up) {
+    @include media-max(desktop-down) {
       font-size: 3.5rem;
       line-height: 3rem;
     }
-    @include media-max(desktop-down) {
+    @include media-max(tablet-down) {
       font-size: 3rem;
       line-height: 3rem;
-    }
-    @include media-max(phone) {
-      font-size: 49px;
     }
   }
   &__list {

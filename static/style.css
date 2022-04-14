@@ -496,29 +496,23 @@ main > * {
 
 .different__title {
   font-family: "DM Serif Display", serif;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 4rem;
   font-weight: 400;
   letter-spacing: -1px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1280px) {
   .different__title {
     font-size: 3.5rem;
     line-height: 3rem;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 900px) {
   .different__title {
     font-size: 3rem;
     line-height: 3rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .different__title {
-    font-size: 49px;
   }
 }
 
