@@ -45,6 +45,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 99;
 }
 
 .btn {
@@ -164,6 +165,17 @@ body {
   }
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
 .mobile-nav {
   display: none;
   position: absolute;
@@ -245,17 +257,6 @@ body.modal-open {
 
 header.modal-open {
   height: 100vh;
-}
-
-.mobile-nav-toggle {
-  display: none;
-}
-
-@media screen and (max-width: 1024px) {
-  .mobile-nav-toggle {
-    display: block;
-    cursor: pointer;
-  }
 }
 
 main {

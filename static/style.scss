@@ -12,8 +12,6 @@ $font-size-default: 16px;
 $font-weight-default: 400;
 $font-family-default: "Karla", sans-serif;
 $font-family-title: "DM Serif Display", serif;
-
-// mixins
 $breakpoints: (
   "phone": 500px,
   "tablet-up": 768px,
@@ -22,6 +20,9 @@ $breakpoints: (
   "desktop-down": 1280px,
   "widescreen-up": 1440px,
 );
+
+// Mixins
+
 @mixin media-max($_key) {
   @media screen and (max-width: map-get($breakpoints, $_key)) {
     & {
@@ -81,6 +82,7 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 99;
 }
 
 .btn {
@@ -137,6 +139,8 @@ body {
 
 // Components
 
+// Header
+
 .header-bar {
   height: 80px;
   display: flex;
@@ -155,6 +159,16 @@ body {
   }
   @include media-max(desktop-up) {
     display: none;
+  }
+}
+
+// Mobile nav
+
+.mobile-nav-toggle {
+  display: none;
+  @include media-max(desktop-up) {
+    display: block;
+    cursor: pointer;
   }
 }
 
@@ -221,13 +235,7 @@ header.modal-open {
   height: 100vh;
 }
 
-.mobile-nav-toggle {
-  display: none;
-  @include media-max(desktop-up) {
-    display: block;
-    cursor: pointer;
-  }
-}
+// Main sections
 
 main {
   z-index: 1;
@@ -474,6 +482,8 @@ main > * {
     }
   }
 }
+
+// Footer
 
 .footer {
   @include default-padding();
