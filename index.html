@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/a76bab607b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="static/style.css" />
   
   <title>Frontend Mentor | Ping coming soon page</title>
@@ -17,19 +18,66 @@
 </head>
 <body>
 
-  We are launching soon!
+  <!-- Header -->
+  <header>
+    <img src="./images/logo.svg" alt="PING. logo" class="header__logo">
+  </header>
 
-  Subscribe and get notified
+  <!-- Main -->
+  <main>
 
-  Notify Me
+    <!-- Launch welcome -->
+    <section class="launch">
+      <h1 class="launch__title">
+        We are launching <span class="launch__bold">soon!</span>
+      </h1>
+    </section>
 
-  &copy; Copyright Ping. All rights reserved.
+    <!-- Subscription form -->
+    <section class="subscribe">
+      <h2 class="subscribe__title">
+        Subscribe and get notified
+      </h2>
+      <form action="" method="post" class="subscribe__form">
+        <input type="email" class="subscribe__input" name="email" id="email" required>
+        <input type="submit" class="subscribe__submit" value="Notify Me">
+      </form>
+    </section>
 
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/mathieuc22">Nervous Buffalo</a>.
-    </div>
+    <!-- Dashboard illustration -->
+    <section class="dashboard">
+      <img src="./images/illustration-dashboard.png" alt="Dashboard illustration" class="dashboard__illustration">
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <!-- Social icons -->
+    <section class="social">
+      <div class="social__facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="social__twitter">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="social__instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </section>
+
+    <!-- Copyright section -->
+    <section class="copyright">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </section>
+    
   </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/mathieuc22">Nervous Buffalo</a>.
+  </div>
 </body>
 </html>
