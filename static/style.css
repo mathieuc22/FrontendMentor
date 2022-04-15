@@ -40,7 +40,21 @@ body {
   z-index: 99;
 }
 
+.header {
+  margin-bottom: 1.75rem;
+}
+
+.header__logo {
+  width: 2.7rem;
+  margin-top: 4.2rem;
+}
+
+.launch {
+  margin-bottom: 0.9rem;
+}
+
 .launch__title {
+  font-size: 1.1rem;
   font-weight: 300;
   color: #969696;
 }
@@ -50,14 +64,20 @@ body {
   color: initial;
 }
 
+.subscribe {
+  margin-bottom: 3.1rem;
+  font-size: 0.6rem;
+}
+
 .subscribe__title {
+  margin-bottom: 1.35rem;
   font-weight: 300;
-  font-size: 0.7rem;
+  font-size: inherit;
 }
 
 .subscribe__form {
   margin: auto;
-  width: 90%;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +87,81 @@ body {
           flex-direction: column;
 }
 
+.subscribe__input {
+  margin: 0.25rem 0;
+  padding: 0.6rem 1.5rem;
+  font-size: inherit;
+  border-radius: 1rem;
+  border: 1px solid #c2d3ff;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+.subscribe__input::placeholder {
+  color: #c2d3ff;
+}
+
+.subscribe__input--submit {
+  border: 1px solid #4f7df3;
+  color: #fff;
+  background-color: #4f7df3;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 4px 8px 3px #dee6fd;
+          box-shadow: 0px 4px 8px 3px #dee6fd;
+}
+
+.dashboard {
+  margin-bottom: 5.6rem;
+}
+
 .dashboard__illustration {
-  width: 90%;
+  width: 86%;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #4f7df3;
+  gap: 0.25rem;
+  margin-bottom: 1.45rem;
+}
+
+.social__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social__icon > * {
+  font-size: 0.75rem;
+}
+
+.copyright {
+  color: #969696;
+  font-size: 0.5rem;
 }
 /*# sourceMappingURL=style.css.map */

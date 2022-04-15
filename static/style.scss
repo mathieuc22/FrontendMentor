@@ -50,8 +50,18 @@ body {
 
 // Components
 
+.header {
+  margin-bottom: 1.75rem;
+  &__logo {
+    width: 2.7rem;
+    margin-top: 4.2rem;
+  }
+}
+
 .launch {
+  margin-bottom: 0.9rem;
   &__title {
+    font-size: 1.1rem;
     font-weight: 300;
     color: $color-neutral-Gray;
   }
@@ -62,20 +72,73 @@ body {
 }
 
 .subscribe {
+  margin-bottom: 3.1rem;
+  font-size: 0.6rem;
   &__title {
+    margin-bottom: 1.35rem;
     font-weight: 300;
-    font-size: 0.7rem;
+    font-size: inherit;
   }
   &__form {
     margin: auto;
-    width: 90%;
+    width: 75%;
     display: flex;
     flex-direction: column;
+  }
+  &__input {
+    margin: 0.25rem 0;
+    padding: 0.6rem 1.5rem;
+    font-size: inherit;
+    border-radius: 1rem;
+    border: 1px solid $color-secondary-PaleBlue;
+    &::placeholder {
+      color: $color-secondary-PaleBlue;
+    }
+    &--submit {
+      border: 1px solid $color-primary-Blue;
+      color: $color-mainBG;
+      background-color: $color-primary-Blue;
+      font-weight: 700;
+      box-shadow: 0px 4px 8px 3px lighten($color: $color-primary-Blue, $amount: 30%);
+    }
   }
 }
 
 .dashboard {
+  margin-bottom: 5.6rem;
   &__illustration {
-    width: 90%;
+    width: 86%;
   }
+}
+
+// .footer {
+//   position: fixed;
+//   bottom: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+.social {
+  display: flex;
+  justify-content: center;
+  color: $color-primary-Blue;
+  gap: 0.25rem;
+  margin-bottom: 1.45rem;
+  &__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1px solid $color-secondary-PaleBlue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > * {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.copyright {
+  color: $color-neutral-Gray;
+  font-size: 0.5rem;
 }
