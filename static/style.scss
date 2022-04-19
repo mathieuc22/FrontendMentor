@@ -94,13 +94,33 @@ body {
     &::placeholder {
       color: $color-secondary-PaleBlue;
     }
+    &:focus {
+      outline: none;
+    }
     &--submit {
       border: 1px solid $color-primary-Blue;
       color: $color-mainBG;
       background-color: $color-primary-Blue;
       font-weight: 700;
       box-shadow: 0px 4px 8px 3px lighten($color: $color-primary-Blue, $amount: 30%);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background-color: lighten($color: $color-primary-Blue, $amount: 10%);
+        border-color: lighten($color: $color-primary-Blue, $amount: 10%);
+      }
+      &:active {
+        transform: translateY(5px);
+      }
     }
+  }
+}
+
+.error {
+  border: 1px solid red;
+  &__message {
+    color: red;
+    font-style: italic;
   }
 }
 
@@ -132,6 +152,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: $color-primary-Blue;
+      border-color: $color-primary-Blue;
+      color: $color-mainBG;
+    }
     & > * {
       font-size: 0.75rem;
     }

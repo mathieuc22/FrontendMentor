@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://kit.fontawesome.com/a76bab607b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="static/style.css" />
+  <script type="module" src="static/main.js"></script>
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
@@ -38,8 +39,9 @@
       <h2 class="subscribe__title">
         Subscribe and get notified
       </h2>
-      <form action="" method="post" class="subscribe__form">
-        <input type="email" class="subscribe__input" name="email" id="email" placeholder="Your email address..." required>
+      <form action="" class="subscribe__form" novalidate>
+        <input type="email" class="subscribe__input" name="email" id="email" placeholder="Your email address...">
+        <span class="error__message" aria-live="polite"></span>
         <input type="submit" class="subscribe__input subscribe__input--submit" value="Notify Me">
       </form>
     </section>
