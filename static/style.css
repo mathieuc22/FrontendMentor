@@ -31,6 +31,13 @@ body {
   margin: auto;
 }
 
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 30px;
+  }
+}
+
 .attribution {
   position: fixed;
   bottom: 0;
@@ -44,19 +51,44 @@ body {
   margin-bottom: 1.75rem;
 }
 
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 1.4rem;
+  }
+}
+
 .header__logo {
   width: 2.7rem;
-  margin-top: 4.2rem;
+  margin-top: 86px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 2.9rem;
+    margin-bottom: unset;
+  }
 }
 
 .launch {
   margin-bottom: 0.9rem;
 }
 
+@media screen and (min-width: 768px) {
+  .launch {
+    margin-bottom: 0.65rem;
+  }
+}
+
 .launch__title {
   font-size: 1.1rem;
   font-weight: 300;
   color: #969696;
+}
+
+@media screen and (min-width: 768px) {
+  .launch__title {
+    font-size: 48.5px;
+  }
 }
 
 .launch__bold {
@@ -67,6 +99,12 @@ body {
 .subscribe {
   margin-bottom: 3.1rem;
   font-size: 0.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-bottom: 2.8rem;
+  }
 }
 
 .subscribe__title {
@@ -87,12 +125,45 @@ body {
           flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    width: unset;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__form > * {
+    margin: 0 7px;
+  }
+}
+
+.subscribe__input-group {
+  position: relative;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 .subscribe__input {
-  margin: 0.25rem 0;
+  width: 100%;
   padding: 0.6rem 1.5rem;
   font-size: inherit;
   border-radius: 1rem;
   border: 1px solid #c2d3ff;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    padding: 0.6rem 1rem;
+    font-size: 16px;
+  }
 }
 
 .subscribe__input::-webkit-input-placeholder {
@@ -116,6 +187,9 @@ body {
 }
 
 .subscribe__input--submit {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border: 1px solid #4f7df3;
   color: #fff;
   background-color: #4f7df3;
@@ -124,6 +198,12 @@ body {
           box-shadow: 0px 4px 8px 3px #dee6fd;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__input--submit {
+    max-width: 200px;
+  }
 }
 
 .subscribe__input--submit:hover {
@@ -144,10 +224,30 @@ body {
 .error__message {
   color: red;
   font-style: italic;
+  margin-top: 0.25rem;
+  margin-bottom: 0.7rem;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .error__message {
+    position: absolute;
+    text-align: left;
+    bottom: -77%;
+    left: 1rem;
+    font-size: 12.2px;
+  }
 }
 
 .dashboard {
   margin-bottom: 5.6rem;
+  max-width: 745px;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard {
+    margin-bottom: 2.2rem;
+  }
 }
 
 .dashboard__illustration {
@@ -166,9 +266,15 @@ body {
   margin-bottom: 1.45rem;
 }
 
+@media screen and (min-width: 768px) {
+  .social {
+    margin-bottom: 0.9rem;
+  }
+}
+
 .social__icon {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 30px;
+  width: 30px;
   border: 1px solid #c2d3ff;
   border-radius: 50%;
   display: -webkit-box;
@@ -192,11 +298,17 @@ body {
 }
 
 .social__icon > * {
-  font-size: 0.75rem;
+  font-size: 15px;
 }
 
 .copyright {
   color: #969696;
-  font-size: 0.5rem;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
