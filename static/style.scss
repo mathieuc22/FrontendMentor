@@ -4,7 +4,7 @@
 
 // Colors
 $color-mainBG: #fff;
-$color-Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$color-Very-Dark-Grayish-Blue: #48556a;
 $color-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
 $color-Grayish-Blue: hsl(212, 23%, 69%);
 $color-Light-Grayish-Blue: hsl(210, 46%, 95%);
@@ -29,14 +29,72 @@ body {
   font-family: $font-family-default;
   font-size: $font-size-default;
   font-weight: $font-weight-default;
-  text-align: center;
-  color: $color-Very-Dark-Grayish-Blue;
+  color: $color-Desaturated-Dark-Blue;
   background-color: $color-Light-Grayish-Blue;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100%;
   margin: auto;
 }
 
 // Components
+.card {
+  background-color: $color-mainBG;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 730px;
+  height: 280px;
+  display: flex;
+box-shadow: 20px 20px 20px 0px rgba(72,85,106,0.03);
+  &__image {
+    width: 285px;
+    object-fit: cover;
+    object-position: left top;
+  }
+  &__content {
+    padding: 33px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $color-Very-Dark-Grayish-Blue;
+    font-weight: 700;
+    font-size: 1.55em;
+  }
+  &__text {
+    line-height: 20px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__avatar {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 20px;
+  }
+  &__author {
+    color: $color-Very-Dark-Grayish-Blue;
+    font-weight: 700;
+  }
+  &__date {
+    color: $color-Grayish-Blue;
+  }
+  &__share {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: $color-Light-Grayish-Blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    position: absolute;
+    right: 0;
+  }
+}

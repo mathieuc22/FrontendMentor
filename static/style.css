@@ -14,8 +14,7 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
   font-weight: 500;
-  text-align: center;
-  color: #48556a;
+  color: #6d7f97;
   background-color: #ecf2f8;
   position: relative;
   display: -webkit-box;
@@ -28,6 +27,99 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 730px;
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 20px 20px 20px 0px rgba(72, 85, 106, 0.03);
+          box-shadow: 20px 20px 20px 0px rgba(72, 85, 106, 0.03);
+}
+
+.card__image {
+  width: 285px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left top;
+     object-position: left top;
+}
+
+.card__content {
+  padding: 33px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__title {
+  color: #48556a;
+  font-weight: 700;
+  font-size: 1.55em;
+}
+
+.card__text {
+  line-height: 20px;
+}
+
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.card__avatar {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.card__author {
+  color: #48556a;
+  font-weight: 700;
+}
+
+.card__date {
+  color: #9eafc2;
+}
+
+.card__share {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2em;
+  position: absolute;
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
