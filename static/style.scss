@@ -48,6 +48,7 @@ body {
   height: 280px;
   display: flex;
   box-shadow: 0px 20px 30px 0px rgba(72, 85, 106, 0.1);
+  position: relative;
   @media screen and (max-width: 768px) {
     width: 87%;
     height: unset;
@@ -72,6 +73,7 @@ body {
     justify-content: space-between;
     @media screen and (max-width: 768px) {
       padding: 36px 32px;
+      padding-bottom: 15px;
     }
   }
   &__title {
@@ -114,27 +116,28 @@ body {
     border-radius: 50%;
     position: absolute;
     right: 0;
-  }
-  &__share-btn {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    background-color: $color-Light-Grayish-Blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all ease-in 0.2s;
-    &:hover {
-      background-color: $color-Desaturated-Dark-Blue;
-    }
-    &:hover path {
-      fill: $color-Light-Grayish-Blue;
-    }
-    cursor: pointer;
-    &--active {
-      background-color: $color-Desaturated-Dark-Blue;
-      & path {
+    z-index: 99;
+    &-btn {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      background-color: $color-Light-Grayish-Blue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all ease-in 0.2s;
+      &:hover {
+        background-color: $color-Desaturated-Dark-Blue;
+      }
+      &:hover path {
         fill: $color-Light-Grayish-Blue;
+      }
+      cursor: pointer;
+      &--active {
+        background-color: $color-Desaturated-Dark-Blue;
+        & path {
+          fill: $color-Light-Grayish-Blue;
+        }
       }
     }
   }
@@ -151,11 +154,22 @@ body {
   z-index: 20;
   position: absolute;
   font-size: 0.9em;
-  bottom: 175%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 95px;
+  right: 56px;
+  transform: translateX(50%);
   box-shadow: 0px 10px 20px 0px rgba(72, 85, 106, 0.3);
   animation: fadeIn 0.3s;
+  @media screen and (max-width: 768px) {
+    padding: 0px 32px;
+    height: 65px;
+    width: 100%;
+    transform: unset;
+    right: unset;
+    bottom: 0;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: unset;
+    gap: 15px;
+  }
   &__text {
     cursor: pointer;
     text-transform: uppercase;
@@ -173,6 +187,9 @@ body {
     background-color: $color-Very-Dark-Grayish-Blue;
     bottom: 0;
     transform: translateY(50%) rotate(45deg);
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
