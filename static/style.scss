@@ -86,7 +86,13 @@ body {
     color: $color-Grayish-Blue;
   }
   &__share {
-    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+  }
+  &__share-btn {
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -94,14 +100,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    right: 0;
     transition: all ease-in 0.2s;
     &:hover {
       background-color: $color-Desaturated-Dark-Blue;
     }
-    &:hover path{
+    &:hover path {
       fill: $color-Light-Grayish-Blue;
+    }
+    cursor: pointer;
+    &--active {
+      background-color: $color-Desaturated-Dark-Blue;
+      & path {
+        fill: $color-Light-Grayish-Blue;
+      }
     }
   }
 }
@@ -118,25 +129,39 @@ body {
   position: absolute;
   font-size: 0.9em;
   bottom: 175%;
+  left: 50%;
+  transform: translateX(-50%);
   box-shadow: 0px 10px 20px 0px rgba(72, 85, 106, 0.3);
   animation: fadeIn 0.3s;
   &__text {
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     color: $color-Grayish-Blue;
   }
+  &__icon {
+    cursor: pointer;
+  }
   &__shape {
     position: absolute;
-    bottom: -19%;
     width: 17px;
     height: 17px;
     z-index: -1;
     background-color: $color-Very-Dark-Grayish-Blue;
-    transform: rotate(45deg);
+    bottom: 0;
+    transform: translateY(50%) rotate(45deg);
   }
 }
 
+.active {
+  display: flex;
+}
+
 @keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

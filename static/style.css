@@ -105,7 +105,14 @@ body {
 }
 
 .card__share {
-  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+
+.card__share-btn {
   height: 32px;
   width: 32px;
   border-radius: 50%;
@@ -119,17 +126,24 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  right: 0;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
+  cursor: pointer;
 }
 
-.card__share:hover {
+.card__share-btn:hover {
   background-color: #6d7f97;
 }
 
-.card__share:hover path {
+.card__share-btn:hover path {
+  fill: #ecf2f8;
+}
+
+.card__share-btn--active {
+  background-color: #6d7f97;
+}
+
+.card__share-btn--active path {
   fill: #ecf2f8;
 }
 
@@ -148,6 +162,9 @@ body {
   position: absolute;
   font-size: 0.9em;
   bottom: 175%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-box-shadow: 0px 10px 20px 0px rgba(72, 85, 106, 0.3);
           box-shadow: 0px 10px 20px 0px rgba(72, 85, 106, 0.3);
   -webkit-animation: fadeIn 0.3s;
@@ -155,20 +172,31 @@ body {
 }
 
 .share__text {
+  cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   color: #9eafc2;
 }
 
+.share__icon {
+  cursor: pointer;
+}
+
 .share__shape {
   position: absolute;
-  bottom: -19%;
   width: 17px;
   height: 17px;
   z-index: -1;
   background-color: #48556a;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  bottom: 0;
+  -webkit-transform: translateY(50%) rotate(45deg);
+          transform: translateY(50%) rotate(45deg);
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @-webkit-keyframes fadeIn {
