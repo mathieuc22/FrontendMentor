@@ -7,7 +7,7 @@ $color-mainBG: #fff;
 $color-Very-Dark-Grayish-Blue: #48556a;
 $color-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
 $color-Grayish-Blue: hsl(212, 23%, 69%);
-$color-Light-Grayish-Blue: hsl(210, 46%, 95%);
+$color-Light-Grayish-Blue: #ecf2f8;
 // Typography
 $font-size-default: 13px;
 $font-weight-default: 500;
@@ -44,15 +44,15 @@ body {
 .card {
   background-color: $color-mainBG;
   border-radius: 10px;
-  overflow: hidden;
   width: 730px;
   height: 280px;
   display: flex;
-box-shadow: 20px 20px 20px 0px rgba(72,85,106,0.03);
+  box-shadow: 0px 20px 30px 0px rgba(72, 85, 106, 0.1);
   &__image {
     width: 285px;
     object-fit: cover;
     object-position: left top;
+    border-radius: 10px 0 0 10px;
   }
   &__content {
     padding: 33px 40px;
@@ -86,6 +86,7 @@ box-shadow: 20px 20px 20px 0px rgba(72,85,106,0.03);
     color: $color-Grayish-Blue;
   }
   &__share {
+    cursor: pointer;
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -93,8 +94,49 @@ box-shadow: 20px 20px 20px 0px rgba(72,85,106,0.03);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
     position: absolute;
     right: 0;
+    transition: all ease-in 0.2s;
+    &:hover {
+      background-color: $color-Desaturated-Dark-Blue;
+    }
+    &:hover path{
+      fill: $color-Light-Grayish-Blue;
+    }
   }
+}
+
+.share {
+  display: none;
+  background-color: $color-Very-Dark-Grayish-Blue;
+  padding: 15px;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+  width: 250px;
+  z-index: 20;
+  position: absolute;
+  font-size: 0.9em;
+  bottom: 175%;
+  box-shadow: 0px 10px 20px 0px rgba(72, 85, 106, 0.3);
+  animation: fadeIn 0.3s;
+  &__text {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: $color-Grayish-Blue;
+  }
+  &__shape {
+    position: absolute;
+    bottom: -19%;
+    width: 17px;
+    height: 17px;
+    z-index: -1;
+    background-color: $color-Very-Dark-Grayish-Blue;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
