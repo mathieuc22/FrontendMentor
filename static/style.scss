@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+// Variables
+
+// Colors
+$color-mainBG: #fff;
+$color-Red: hsl(0, 100%, 68%);
+$color-Very-Dark-Blue: hsl(230, 29%, 20%);
+$color-Dark-Grayish-Blue: hsl(230, 11%, 40%);
+$color-Grayish-Blue: hsl(231, 7%, 65%);
+$color-Light-Grayish-Blue: hsl(207, 33%, 95%);
+
+// Typography
+$font-size-default: 18px;
+$font-weight-default: 400;
+$font-family-default: "Manrope", sans-serif;
+
+// Base
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  color: $color-Very-Dark-Blue;
+  background-color: $color-mainBG;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
