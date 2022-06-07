@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="static/style.css" />
-  <script type="module" src="static/main.js"></script>
-  
-  <title>Frontend Mentor | Project tracking intro component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+    <script type="module" src="static/main.js"></script>
 
-</head>
-<body>
+    <title>Frontend Mentor | Project tracking intro component</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="logo" />
+      <nav>
+        <ul class="navbar">
+          <li class="navbar__link">Product</li>
+          <li class="navbar__link">Features</li>
+          <li class="navbar__link">Pricing</li>
+          <li class="navbar__link">Login</li>
+        </ul>
+      </nav>
+    </header>
 
-  <header>
-    <img src="images/logo.svg" alt="logo">
-    <nav>
-      <ul class="navbar">
-        <li class="navbar__link">Product</li>
-        <li class="navbar__link">Features</li>
-        <li class="navbar__link">Pricing</li>
-        <li class="navbar__link">Login</li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <div class="hero">
-      <h2 class="hero__subtitle">
-        <span class="new">New</span>
-        Monograph Dashboard
-      </h2>
-      <h1 class="hero__title">Powerful insights into your team</h1>
-      <div class="hero__text">Project planning and time tracking for agile teams</div>
-      <div class="hero__demo">
-        <div class="btn">Schedule a demo</div>
-         to see a live preview
+    <main>
+      <div class="hero">
+        <h2 class="hero__subtitle">
+          <span class="new">New</span>
+          Monograph Dashboard
+        </h2>
+        <h1 class="hero__title">Powerful insights into your team</h1>
+        <div class="hero__text">
+          Project planning and time tracking for agile teams
+        </div>
+        <div class="hero__demo">
+          <div class="btn">Schedule a demo</div>
+          to see a live preview
+        </div>
       </div>
-    </div>
 
-    <img src="images/illustration-devices.svg" alt="illustration devices">
-  </main>
-
-</body>
+      <div class="hero__illustration">
+        <img src="images/illustration-devices.svg" alt="illustration devices" />
+      </div>
+    </main>
+  </body>
 </html>
