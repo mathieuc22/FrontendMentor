@@ -30,6 +30,8 @@ Users should be able to:
 
 [<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
+[<img src="./Screenshot_mobile-hover.png" height="450px"/>](./Screenshot_mobile-hover.png)
+
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/mathieuc22/article-preview-component-master)
