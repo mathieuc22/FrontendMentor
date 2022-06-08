@@ -147,6 +147,29 @@ header {
   }
 }
 
+.animation {
+  -webkit-animation: InOut 0.3s ease-in-out;
+          animation: InOut 0.3s ease-in-out;
+}
+
+@-webkit-keyframes InOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes InOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .mobile-nav-toggle {
   display: none;
 }

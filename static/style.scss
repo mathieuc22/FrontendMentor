@@ -131,6 +131,19 @@ header {
   }
 }
 
+.animation {
+  animation: InOut 0.3s ease-in-out;
+}
+
+@keyframes InOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .mobile-nav-toggle {
   display: none;
   @media screen and (max-width: 985px) {

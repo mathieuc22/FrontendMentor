@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         navbar.querySelectorAll("*").forEach((elt) => {
           elt.classList.add("mobile");
         });
+        navbar.classList.add("animation");
       }
     });
 });
