@@ -52,6 +52,8 @@ header {
   text-transform: uppercase;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +75,7 @@ main {
   text-transform: uppercase;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
-  font-size: 5.3em;
+  font-size: 3.54em;
   line-height: 1em;
 }
 
@@ -81,9 +83,13 @@ main {
   text-transform: uppercase;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 0.9em;
   color: #a0a1ac;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.28em;
+}
+
+.hero__text {
+  color: #5b5f71;
 }
 
 .hero__illustration {
@@ -91,11 +97,13 @@ main {
 }
 
 .new {
+  font-size: 0.89em;
   font-weight: 700;
   color: #fff;
   background: #242942;
-  border-radius: 30px;
-  padding: 5px 16px;
-  letter-spacing: initial;
+  border-radius: 12.5px;
+  padding: 4px 10px;
+  letter-spacing: 0.1em;
+  margin-right: 7px;
 }
 /*# sourceMappingURL=style.css.map */

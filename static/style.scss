@@ -54,6 +54,8 @@ header {
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 1px;
     display: flex;
     gap: 40px;
 }
@@ -70,16 +72,19 @@ main {
         text-transform: uppercase;
         font-family: 'Barlow Condensed', sans-serif;
         font-weight: 700;
-        font-size: 5.3em;
+        font-size: 3.54em;
         line-height: 1em;
     }
     &__subtitle {
         text-transform: uppercase;
         font-family: 'Barlow Condensed', sans-serif;
         font-weight: 400;
-        font-size: 1.3em;
+        font-size: 0.9em;
         color: $color-Grayish-Blue;
-        letter-spacing: 0.3em;
+        letter-spacing: 0.28em;
+    }
+    &__text {
+        color: $color-Dark-Grayish-Blue;
     }
     &__illustration {
         background: $color-Light-Grayish-Blue;
@@ -87,10 +92,12 @@ main {
 }
 
 .new {
+    font-size: 0.89em;
     font-weight: 700;
     color: $color-mainBG;
     background: $color-Very-Dark-Blue;
-    border-radius: 30px;
-    padding: 5px 16px;
-    letter-spacing: initial;
+    border-radius: 12.5px;
+    padding: 4px 10px;
+    letter-spacing: 0.1em;
+    margin-right: 7px;
 }
