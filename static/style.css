@@ -17,7 +17,7 @@ body {
   color: #242942;
   background-color: #fff;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
 }
@@ -25,7 +25,7 @@ body {
 header {
   position: relative;
   z-index: 30;
-  padding: 65px 165px;
+  padding: 65px 11.45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,30 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 40px;
+}
+
+.navbar__link {
+  cursor: pointer;
+}
+
+.navbar__link--divider {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #a0a1ac;
+  cursor: unset;
+}
+
+.navbar__link--login {
+  color: #a0a1ac;
+}
+
+.navbar__link:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -62,7 +85,8 @@ main {
 
 .hero {
   width: 51%;
-  padding-left: 165px;
+  padding-left: 11.45%;
+  padding-bottom: 65px;
 }
 
 .hero__title {
@@ -105,10 +129,17 @@ main {
 
 .illustration {
   position: absolute;
-  z-index: 10;
   top: 0;
   right: 0;
   width: 49%;
+  height: 100%;
+}
+
+.illustration__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
   height: 430px;
   border-radius: 0 0 0 50px;
   background: #eef3f6;
@@ -116,7 +147,7 @@ main {
 
 .illustration img {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 14px;
 }
 
@@ -144,10 +175,12 @@ main {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 16.5px;
   letter-spacing: 0.07em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #5cbf2a;
+  background-color: #ff8f8f;
 }
 
 .btn:active {
