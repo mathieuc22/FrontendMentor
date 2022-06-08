@@ -93,6 +93,51 @@ header {
   }
 }
 
+.mobile.navbar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $color-mainBG;
+  width: 83%;
+  margin-top: 42px;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.35em;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+  &__link {
+    cursor: pointer;
+    margin: 23px 0;
+    &--divider {
+      height: 1px;
+      width: 90%;
+      margin: auto;
+      background-color: $color-Grayish-Blue;
+      cursor: unset;
+    }
+    &--login {
+      color: $color-Grayish-Blue;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media screen and (max-width: 985px) {
+    display: block;
+  }
+}
+
+.mobile-nav-toggle {
+  display: none;
+  @media screen and (max-width: 985px) {
+    display: block;
+  }
+}
+
 main {
   width: 100%;
   display: flex;

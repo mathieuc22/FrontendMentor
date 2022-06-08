@@ -100,6 +100,63 @@ header {
   }
 }
 
+.mobile.navbar {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  width: 83%;
+  margin-top: 42px;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.35em;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.mobile.navbar__link {
+  cursor: pointer;
+  margin: 23px 0;
+}
+
+.mobile.navbar__link--divider {
+  height: 1px;
+  width: 90%;
+  margin: auto;
+  background-color: #a0a1ac;
+  cursor: unset;
+}
+
+.mobile.navbar__link--login {
+  color: #a0a1ac;
+}
+
+.mobile.navbar__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 985px) {
+  .mobile.navbar {
+    display: block;
+  }
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 985px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
 main {
   width: 100%;
   display: -webkit-box;
