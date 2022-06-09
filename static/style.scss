@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
 // Variables
 
@@ -11,7 +11,7 @@ $color-Very-Dark-Gray: hsl(0, 0%, 41%);
 // Typography
 $font-size-default: 15px;
 $font-weight-default: 400;
-$font-family-default: 'Alata', sans-serif;
+$font-family-default: "Alata", sans-serif;
 
 // Base
 
@@ -31,4 +31,44 @@ body {
   font-weight: $font-weight-default;
   color: $color-Very-Dark-Gray;
   background-color: $color-mainBG;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  top: 64px;
+  padding: 0 164px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: $color-mainBG;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.hero {
+  &__title {
+    position: absolute;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 4.82em;
+    font-weight: 300;
+    color: $color-mainBG;
+    max-width: 650px;
+    border: 2px solid $color-mainBG;
+    padding: 39px;
+    padding-bottom: 27px;
+    margin: 164px;
+    margin-top: 225px;
+    line-height: 0.97em;
+  }
+  &__illustration {
+    width: 100%;
+  }
 }
