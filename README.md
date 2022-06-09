@@ -30,7 +30,7 @@ Users should be able to:
 
 [<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
-[<img src="./Screenshot_mobile-hover.png" height="450px"/>](./Screenshot_mobile-hover.png)
+[<img src="./Screenshot_mobile-modal.png" height="450px"/>](./Screenshot_mobile-modal.png)
 
 
 ### Links

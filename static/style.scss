@@ -188,7 +188,7 @@ main {
     }
   }
   &__subtitle {
-    margin-top: 100px;
+    margin-top: 98px;
     text-transform: uppercase;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
@@ -201,7 +201,8 @@ main {
     }
   }
   &__text {
-    margin-top: 30px;
+    margin-top: 34px;
+    line-height: 26px;
     width: 50%;
     color: $color-Dark-Grayish-Blue;
     @media screen and (max-width: 985px) {
@@ -211,7 +212,7 @@ main {
     }
   }
   &__demo {
-    margin-top: 100px;
+    margin-top: 63px;
     @media screen and (max-width: 985px) {
       margin-top: 30px;
     }
@@ -259,7 +260,7 @@ main {
   display: inline-block;
   cursor: pointer;
   color: $color-mainBG;
-  padding: 15px 30px;
+  padding: 14px 30px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
