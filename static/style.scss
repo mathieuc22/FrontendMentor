@@ -38,7 +38,7 @@ header {
   position: absolute;
   z-index: 1;
   top: 64px;
-  padding: 0 164px;
+  padding: 0 165px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,10 +65,38 @@ header {
     padding: 39px;
     padding-bottom: 27px;
     margin: 164px;
-    margin-top: 225px;
+    margin-top: 15.6%;
     line-height: 0.97em;
   }
   &__illustration {
     width: 100%;
+  }
+}
+
+.leader {
+  position: relative;
+  padding: 165px 165px 0 165px;
+  &__content {
+    position: absolute;
+    bottom: 0;
+    right: 165px;
+    background-color: $color-mainBG;
+    width: 36.85%;
+    padding: 96px 0 0 96px;
+  }
+  &__title {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    color: $color-Black;
+    font-size: 3.2em;
+    font-weight: 300;
+  }
+  &__text {
+    line-height: 1.64em;
+    padding-top: 27px;
+  }
+  &__illustration {
+    max-width: 100%;
+    display: block;
   }
 }

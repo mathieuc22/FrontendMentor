@@ -23,7 +23,7 @@ header {
   position: absolute;
   z-index: 1;
   top: 64px;
-  padding: 0 164px;
+  padding: 0 165px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,11 +57,43 @@ header {
   padding: 39px;
   padding-bottom: 27px;
   margin: 164px;
-  margin-top: 225px;
+  margin-top: 15.6%;
   line-height: 0.97em;
 }
 
 .hero__illustration {
   width: 100%;
+}
+
+.leader {
+  position: relative;
+  padding: 165px 165px 0 165px;
+}
+
+.leader__content {
+  position: absolute;
+  bottom: 0;
+  right: 165px;
+  background-color: #fff;
+  width: 36.85%;
+  padding: 96px 0 0 96px;
+}
+
+.leader__title {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 3.2em;
+  font-weight: 300;
+}
+
+.leader__text {
+  line-height: 1.64em;
+  padding-top: 27px;
+}
+
+.leader__illustration {
+  max-width: 100%;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
