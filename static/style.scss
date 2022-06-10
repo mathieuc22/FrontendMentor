@@ -100,3 +100,66 @@ header {
     display: block;
   }
 }
+
+.creations {
+  padding: 165px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    color: $color-Black;
+    font-size: 3.2em;
+    font-weight: 300;
+  }
+  &__button {
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+    color: $color-Black;
+    border: 1px solid $color-Black;
+    padding: 10px 25px;
+  }
+  // &__card {
+  //   display: flex;
+  //   gap: 2%;
+  //   flex-wrap: wrap;
+  // }
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-auto-rows: 30rem;
+    grid-gap: 2%;
+  }
+}
+
+.creation {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  &__image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__caption {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.1em;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    padding-top: 70%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  }
+}

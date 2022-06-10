@@ -96,4 +96,76 @@ header {
   max-width: 100%;
   display: block;
 }
+
+.creations {
+  padding: 165px;
+}
+
+.creations__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.creations__title {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  font-size: 3.2em;
+  font-weight: 300;
+}
+
+.creations__button {
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 300;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 25px;
+}
+
+.creations__card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-auto-rows: 30rem;
+  grid-gap: 2%;
+}
+
+.creation {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.creation__image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.creation__caption {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.1em;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+  padding-top: 70%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
 /*# sourceMappingURL=style.css.map */
