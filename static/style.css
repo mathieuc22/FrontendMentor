@@ -113,6 +113,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .creations__title {
@@ -126,14 +129,13 @@ header {
 .creations__button {
   display: inline-block;
   cursor: pointer;
-  font-family: "Josefin Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1em;
-  font-weight: 300;
+  letter-spacing: 4px;
   color: black;
   border: 1px solid black;
-  padding: 10px 25px;
+  padding: 9px 39px;
 }
 
 .creations__card {
