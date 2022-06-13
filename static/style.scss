@@ -35,7 +35,9 @@ body {
 }
 
 .logo {
+  padding-bottom: 8px;
   &--footer {
+    padding-bottom: unset;
     width: 144px;
     height: 24px;
   }
@@ -57,6 +59,10 @@ header {
   list-style: none;
   display: flex;
   gap: 30px;
+  &__link {
+    position: relative;
+    padding-bottom: 8px;
+  }
 }
 
 .hero {
@@ -72,7 +78,7 @@ header {
     padding: 39px;
     padding-bottom: 27px;
     margin: 164px;
-    margin-top: 15.6%;
+    margin-top: 15.7%;
     line-height: 0.97em;
   }
   &__illustration {
@@ -114,6 +120,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 80px;
   }
   &__title {
     font-family: "Josefin Sans", sans-serif;
@@ -132,6 +139,11 @@ header {
     color: $color-Black;
     border: 1px solid $color-Black;
     padding: 9px 39px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: $color-Black;
+      color: $color-mainBG;
+    }
   }
   // &__card {
   //   display: flex;
@@ -150,6 +162,24 @@ header {
   position: relative;
   height: 100%;
   width: 100%;
+  cursor: pointer;
+  color: $color-mainBG;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: $color-Black;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    transition: inherit;
+  }
+  &:hover:before {
+    background: rgba(255, 255, 255, 0.75);
+    filter: brightness(85%);
+  }
   &__image {
     display: block;
     height: 100%;
@@ -165,10 +195,7 @@ header {
     bottom: 0;
     left: 0;
     padding: 40px;
-    padding-top: 70%;
     width: 100%;
-    color: $color-mainBG;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
   }
 }
 
@@ -208,15 +235,21 @@ footer {
 }
 
 .hover-underline {
-  &:hover:after {
+  &:after {
     content: "";
     position: absolute;
+    width: 100%;
+    transform: scaleY(0) translateX(-50%);
     width: 24px;
     height: 2px;
     bottom: -4px;
     left: 50%;
     background-color: $color-mainBG;
-    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+
+  }
+  &:hover:after {
+    transform: scaleY(1) translateX(-50%);
   }
 }
 
