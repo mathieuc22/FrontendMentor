@@ -17,5 +17,88 @@ body {
   color: rgba(255, 255, 255, 0.75);
   background-color: #090b1a;
   position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  background-color: #1b1938;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1110px;
+}
+
+.card__content {
+  padding: 71px;
+  padding-bottom: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__title {
+  color: white;
+  font-size: 36px;
+}
+
+.card__text {
+  max-width: 90%;
+  line-height: 25px;
+  padding-bottom: 48px;
+}
+
+.card__stats {
+  max-width: 81.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__illustration {
+  background: #aa5cdb;
+}
+
+.card__illustration img {
+  display: block;
+  mix-blend-mode: multiply;
+  opacity: 75%;
+}
+
+.stat__heading {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Lexend Deca', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.stat__value {
+  color: white;
+  font-weight: 700;
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+
+.accent {
+  color: #aa5cdb;
 }
 /*# sourceMappingURL=style.css.map */
