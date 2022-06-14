@@ -13,6 +13,10 @@ $font-size-default: 15px;
 $font-weight-default: 400;
 $font-family-default: "Alata", sans-serif;
 
+$padding-default: 165px;
+$padding-medium: 100px;
+$padding-small: 65px;
+
 // Base
 
 *,
@@ -47,12 +51,18 @@ header {
   position: absolute;
   z-index: 1;
   top: 64px;
-  padding: 0 165px;
+  padding: 0 $padding-default;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   color: $color-mainBG;
+  @media screen and (max-width: 1280px) {
+    padding: 0 $padding-medium;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 $padding-small;
+  }
 }
 
 .navbar {
@@ -77,9 +87,22 @@ header {
     border: 2px solid $color-mainBG;
     padding: 39px;
     padding-bottom: 27px;
-    margin: 164px;
     margin-top: 15.7%;
+    margin-left: $padding-default;
+    margin-right: $padding-default;
     line-height: 0.97em;
+    @media screen and (max-width: 1280px) {
+      margin-left: $padding-medium;
+      margin-right: $padding-medium;
+      font-size: 4em;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-left: $padding-small;
+      margin-right: $padding-small;
+      max-width: 460px;
+      font-size: 3.6em;
+      padding: 15px;
+    }
   }
   &__illustration {
     width: 100%;
@@ -88,14 +111,26 @@ header {
 
 .leader {
   position: relative;
-  padding: 165px 165px 0 165px;
+  padding: $padding-default $padding-default 0 $padding-default;
+  @media screen and (max-width: 1280px) {
+    padding: $padding-medium $padding-medium 0 $padding-medium;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: $padding-small $padding-small 0 $padding-small;
+  }
   &__content {
     position: absolute;
     bottom: 0;
-    right: 165px;
+    right: $padding-default;
     background-color: $color-mainBG;
     width: 36.85%;
-    padding: 96px 0 0 96px;
+    padding: 6.7% 0 0 6.7%;
+    @media screen and (max-width: 1280px) {
+      right: $padding-medium;
+    }
+    @media screen and (max-width: 1024px) {
+      right: $padding-small;
+    }
   }
   &__title {
     font-family: "Josefin Sans", sans-serif;
@@ -103,6 +138,12 @@ header {
     color: $color-Black;
     font-size: 3.2em;
     font-weight: 300;
+    @media screen and (max-width: 1280px) {
+      font-size: 2.8em;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 2.3em;
+    }
   }
   &__text {
     line-height: 1.64em;
@@ -115,12 +156,24 @@ header {
 }
 
 .creations {
-  padding: 165px;
+  padding: $padding-default;
+  @media screen and (max-width: 1280px) {
+    padding: $padding-medium;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: $padding-small;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 80px;
+    @media screen and (max-width: 1280px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
   }
   &__title {
     font-family: "Josefin Sans", sans-serif;
@@ -128,6 +181,12 @@ header {
     color: $color-Black;
     font-size: 3.2em;
     font-weight: 300;
+    @media screen and (max-width: 1280px) {
+      font-size: 2.8em;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 2.3em;
+    }
   }
   &__button {
     display: inline-block;
@@ -155,6 +214,13 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-auto-rows: 30rem;
     grid-gap: 2%;
+    @media screen and (max-width: 1280px) {
+      grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    }
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      grid-auto-rows: 23rem;
+    }
   }
 }
 
@@ -196,12 +262,26 @@ header {
     left: 0;
     padding: 40px;
     width: 100%;
+    @media screen and (max-width: 1280px) {
+      font-size: 1.8em;
+      padding: 25px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 1.6em;
+      padding: 20px;
+    }
   }
 }
 
 footer {
   background-color: $color-Black;
-  padding: 44px 165px;
+  padding: 44px $padding-default;
+  @media screen and (max-width: 1280px) {
+    padding: 44px $padding-medium;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 44px $padding-small;
+  }
   color: $color-mainBG;
 }
 
@@ -226,7 +306,10 @@ footer {
 .footer-links {
   display: flex;
   list-style: none;
-  gap: 2.18em;
+  gap: 13.1%;
+  @media screen and (max-width: 1024px) {
+    gap: 9%;
+  }
   &__link {
     position: relative;
     cursor: pointer;
