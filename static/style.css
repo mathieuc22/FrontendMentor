@@ -154,6 +154,9 @@ header {
 @media screen and (max-width: 768px) {
   .hero__illustration--mobile {
     display: block;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -207,6 +210,7 @@ header {
     right: unset;
     width: 100%;
     text-align: center;
+    padding: 48px 0;
   }
 }
 
@@ -227,6 +231,12 @@ header {
 @media screen and (max-width: 1024px) {
   .leader__title {
     font-size: 2.3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leader__title {
+    font-size: 2.1em;
   }
 }
 
@@ -253,11 +263,20 @@ header {
 @media screen and (max-width: 768px) {
   .leader__illustration--mobile {
     display: block;
+    width: 100%;
   }
 }
 
 .creations {
+  position: relative;
   padding: 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 1280px) {
@@ -272,28 +291,12 @@ header {
   }
 }
 
-.creations__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 80px;
-}
-
-@media screen and (max-width: 1280px) {
-  .creations__header {
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .creations__header {
-    margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+  .creations {
+    padding: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -303,21 +306,33 @@ header {
   color: black;
   font-size: 3.2em;
   font-weight: 300;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 1280px) {
   .creations__title {
     font-size: 2.8em;
+    margin-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .creations__title {
     font-size: 2.3em;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .creations__title {
+    text-align: center;
   }
 }
 
 .creations__button {
+  position: absolute;
+  top: 165px;
+  right: 165px;
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
@@ -334,6 +349,28 @@ header {
 .creations__button:hover {
   background-color: black;
   color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .creations__button {
+    top: 100px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .creations__button {
+    top: 65px;
+    right: 65px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .creations__button {
+    position: relative;
+    top: unset;
+    right: unset;
+  }
 }
 
 .creations__card {
@@ -384,6 +421,23 @@ header {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .creation__image {
+    display: none;
+  }
+}
+
+.creation__image--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .creation__image--mobile {
+    display: block;
+    width: 100%;
+  }
 }
 
 .creation__caption {
