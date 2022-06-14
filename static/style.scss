@@ -41,11 +41,16 @@ body {
 
 .logo {
   padding-bottom: 8px;
+  z-index: 99;
   &--footer {
     padding-bottom: unset;
     width: 144px;
     height: 24px;
   }
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 header {
@@ -70,6 +75,23 @@ header {
   }
 }
 
+header.modal-open {
+  height: 100vh;
+  padding: 0;
+  top: 0;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    top: 0;
+    right: $padding-mobile;
+    position: absolute;
+    z-index: 99;
+  }
+}
+
 .navbar {
   list-style: none;
   display: flex;
@@ -77,6 +99,36 @@ header {
   &__link {
     position: relative;
     padding-bottom: 8px;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile {
+  &.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 24px;
+    overflow: hidden;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+    width: 100%;
+    background-color: $color-Black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &.mobile-nav-toggle {
+    position: absolute;
+    top: $padding-mobile;
+    right: $padding-mobile;
+  }
+  &.logo {
+    position: absolute;
+    top: $padding-mobile;
+    left: $padding-mobile;
   }
 }
 
