@@ -249,33 +249,33 @@ header {
       color: $color-mainBG;
     }
   }
-  // &__card {
-  //   display: flex;
-  //   gap: 2%;
-  //   flex-wrap: wrap;
-  // }
   &__card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-auto-rows: 30rem;
-    grid-gap: 2%;
-    @media screen and (max-width: 1280px) {
-      grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-    }
-    @media screen and (max-width: 1024px) {
-      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-      grid-auto-rows: 23rem;
-    }
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
+  // &__card {
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  //   grid-auto-rows: 30rem;
+  //   grid-gap: 2%;
+  //   @media screen and (max-width: 1280px) {
+  //     grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  //   }
+  //   @media screen and (max-width: 1024px) {
+  //     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  //     grid-auto-rows: 23rem;
+  //   }
+  // }
 }
 
 .creation {
   position: relative;
-  height: 100%;
-  width: 100%;
   cursor: pointer;
   color: $color-mainBG;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 2%;
   &:hover {
     color: $color-Black;
   }

@@ -337,37 +337,24 @@ header {
 }
 
 .creations__card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-auto-rows: 30rem;
-  grid-gap: 2%;
-}
-
-@media screen and (max-width: 1280px) {
-  .creations__card {
-    -ms-grid-columns: (minmax(13rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .creations__card {
-    -ms-grid-columns: (minmax(12rem, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    grid-auto-rows: 23rem;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .creation {
   position: relative;
-  height: 100%;
-  width: 100%;
   cursor: pointer;
   color: #fff;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 2%;
 }
 
 .creation:hover {
