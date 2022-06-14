@@ -42,7 +42,6 @@ body {
   border-radius: 10px;
   overflow: hidden;
   max-width: 1110px;
-  margin: 88px 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -53,6 +52,7 @@ body {
             flex-direction: column-reverse;
     width: 100%;
     text-align: center;
+    margin: 88px 24px 0 24px;
   }
 }
 
@@ -117,6 +117,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -126,6 +127,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: unset;
+    margin-bottom: 20px;
   }
 }
 
@@ -175,7 +177,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .stat {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
