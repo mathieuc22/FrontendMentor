@@ -26,6 +26,13 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    height: unset;
+  }
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,6 +42,18 @@ body {
   border-radius: 10px;
   overflow: hidden;
   max-width: 1110px;
+  margin: 88px 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .card__content {
@@ -56,15 +75,38 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .card__content {
+    width: 100%;
+    padding: 28px;
+    padding-bottom: 0px;
+  }
+}
+
 .card__title {
   color: white;
   font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+  .card__title {
+    margin-top: 11px;
+    font-size: 28px;
+  }
 }
 
 .card__text {
   max-width: 90%;
   line-height: 25px;
   padding-bottom: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .card__text {
+    margin-top: 11px;
+    max-width: unset;
+    padding-bottom: 41px;
+  }
 }
 
 .card__stats {
@@ -77,6 +119,16 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .card__stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: unset;
+  }
+}
+
 .card__illustration {
   -webkit-box-flex: 1;
       -ms-flex: auto;
@@ -86,7 +138,14 @@ body {
   background: #aa5cdb;
 }
 
-.card__illustration img {
+@media screen and (max-width: 768px) {
+  .card__illustration {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+.card__image {
   display: block;
   mix-blend-mode: multiply;
   opacity: 75%;
@@ -98,9 +157,31 @@ body {
      object-position: right;
 }
 
+@media screen and (max-width: 768px) {
+  .card__image {
+    display: none;
+  }
+}
+
+.card__image--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card__image--mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .stat {
+    margin-bottom: 30px;
+  }
+}
+
 .stat__heading {
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
