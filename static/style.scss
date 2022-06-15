@@ -5,7 +5,7 @@
 // Colors
 
 // Primary
-$color-Desaturated-Red: hsl(0, 36%, 70%);
+$color-Desaturated-Red: rgb(206, 151, 151);
 $color-Soft-Red: hsl(0, 93%, 68%);
 
 // Neutral
@@ -13,9 +13,10 @@ $color-Dark-Grayish-Red: hsl(0, 6%, 24%);
 $color-white: hsl(0, 0%, 100%);
 
 //Gradients
-
 // Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
 // Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+//  background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%);
+//  background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%)100%);
 
 // Typography
 $font-size-default: 16px;
@@ -41,6 +42,132 @@ body {
   color: $color-Desaturated-Red;
   background-color: $color-white;
   position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 
 // Components
+.logo {
+  z-index: 99;
+  position: relative;
+  top: 65px;
+  left: 165px;
+}
+
+main {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+
+.content {
+  // background: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(0, 100%, 98%) 100%),
+  // url(../images/bg-pattern-desktop.svg);
+  // background-position: center top;
+  // background-size: 100% 100%;
+  padding-top: 235px;
+  padding-left: 165px;
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(0, 100%, 98%) 100%
+  );
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+  }
+  &__title {
+    position: relative;
+    z-index: 30;
+    width: 53%;
+    font-size: 4em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 17px;
+    line-height: 68px;
+    margin-bottom: 21px;
+  }
+  &__text {
+    position: relative;
+    z-index: 30;
+    width: 65%;
+    line-height: 28px;
+    margin-bottom: 37px;
+  }
+  &__form {
+    position: relative;
+    z-index: 30;
+    width: 66.9%;
+  }
+  &__input-set {
+    position: relative;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid rgba(206, 151, 151, 0.5);
+    border-radius: 30px;
+    background: transparent;
+    padding: 18px 31px;
+    font-size: 1em;
+    display: flex;
+    height: 56px;
+    &::placeholder {
+      color: rgba(206, 151, 151, 0.5);
+      font-family: $font-family-default;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 30px;
+    background: linear-gradient(
+      135deg,
+      hsl(0, 80%, 86%) 0%,
+      hsl(0, 74%, 74%) 100%
+    );
+    border: 0px;
+    width: 100px;
+    height: 56px;
+    box-shadow: 0px 10px 15px 5px rgba(206, 151, 151, 0.25);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      filter: opacity(50%);
+      box-shadow: 0px 10px 15px 5px rgba(206, 151, 151, 1);
+    }
+  }
+}
+
+.accent {
+  color: $color-Dark-Grayish-Red;
+  font-weight: 600;
+}
+
+.alert {
+  border: 2px solid red;
+  position: relative;
+}
+
+.error-icon {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.error-message {
+  position: absolute;
+  bottom: -50%;
+  left: 32px;
+  font-size: 0.9em;
+}

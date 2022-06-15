@@ -17,5 +17,160 @@ body {
   color: #ce9797;
   background-color: white;
   position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.logo {
+  z-index: 99;
+  position: relative;
+  top: 65px;
+  left: 165px;
+}
+
+main {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content {
+  padding-top: 235px;
+  padding-left: 165px;
+  position: relative;
+  background: linear-gradient(135deg, white 0%, #fff5f5 100%);
+}
+
+.content__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.content__title {
+  position: relative;
+  z-index: 30;
+  width: 53%;
+  font-size: 4em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 17px;
+  line-height: 68px;
+  margin-bottom: 21px;
+}
+
+.content__text {
+  position: relative;
+  z-index: 30;
+  width: 65%;
+  line-height: 28px;
+  margin-bottom: 37px;
+}
+
+.content__form {
+  position: relative;
+  z-index: 30;
+  width: 66.9%;
+}
+
+.content__input-set {
+  position: relative;
+}
+
+.content__input {
+  width: 100%;
+  border: 1px solid rgba(206, 151, 151, 0.5);
+  border-radius: 30px;
+  background: transparent;
+  padding: 18px 31px;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+}
+
+.content__input::-webkit-input-placeholder {
+  color: rgba(206, 151, 151, 0.5);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.content__input:-ms-input-placeholder {
+  color: rgba(206, 151, 151, 0.5);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.content__input::-ms-input-placeholder {
+  color: rgba(206, 151, 151, 0.5);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.content__input::placeholder {
+  color: rgba(206, 151, 151, 0.5);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.content__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+  border: 0px;
+  width: 100px;
+  height: 56px;
+  -webkit-box-shadow: 0px 10px 15px 5px rgba(206, 151, 151, 0.25);
+          box-shadow: 0px 10px 15px 5px rgba(206, 151, 151, 0.25);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.content__btn:hover {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+  -webkit-box-shadow: 0px 10px 15px 5px #ce9797;
+          box-shadow: 0px 10px 15px 5px #ce9797;
+}
+
+.accent {
+  color: #413a3a;
+  font-weight: 600;
+}
+
+.alert {
+  border: 2px solid red;
+  position: relative;
+}
+
+.error-icon {
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+.error-message {
+  position: absolute;
+  bottom: -50%;
+  left: 32px;
+  font-size: 0.9em;
 }
 /*# sourceMappingURL=style.css.map */
