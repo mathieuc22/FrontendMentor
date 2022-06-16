@@ -11,11 +11,65 @@
 html,
 body {
   margin: auto;
-  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
   background-color: #f2f2f2;
   position: relative;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 70%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.column {
+  padding: 30px;
+}
+
+.column__title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+}
+
+.column--sedans {
+  background-color: #e38826;
+}
+
+.column--suvs {
+  background-color: #006970;
+}
+
+.column--luxury {
+  background-color: #004241;
+}
+
+.button {
+  position: relative;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+  mix-blend-mode: screen;
+}
+
+.button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #f2f2f2;
+  border-radius: 30px;
+  content: '';
+  mix-blend-mode: color-burn;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,7 +25,7 @@ $color-neutral-Very-light-gray: hsl(
 // Typography
 $font-size-default: 15px;
 $font-weight-default: 400;
-$font-family-default: "Big Shoulders Display", cursive;
+$font-family-default: 'Lexend Deca', sans-serif;
 
 // Base
 
@@ -49,3 +49,49 @@ body {
 }
 
 // Components
+.card {
+  display: flex;
+  margin: auto;
+  max-width: 70%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.column {
+  padding: 30px;
+  &__title {
+    font-family: 'Big Shoulders Display', cursive;
+    color: $color-neutral-Very-light-gray;
+  }
+  &--sedans {
+    background-color: $color-primary-Bright-orange;
+  }
+  &--suvs {
+    background-color: $color-primary-Dark-cyan;
+  }
+  &--luxury {
+    background-color: $color-primary-Very-dark-cyan;
+  }
+}
+
+.button {
+  position: relative;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+  mix-blend-mode: screen;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $color-neutral-Very-light-gray;
+    border-radius: 30px;
+    content: '';
+    mix-blend-mode: color-burn;
+  }
+}
