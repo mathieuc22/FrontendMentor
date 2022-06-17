@@ -17,6 +17,13 @@ body {
   color: rgba(255, 255, 255, 0.75);
   background-color: #f2f2f2;
   position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card {
@@ -24,18 +31,43 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  max-width: 70%;
-  border-radius: 10px;
+  width: 921px;
+  height: 500px;
+  border-radius: 7px;
   overflow: hidden;
 }
 
 .column {
-  padding: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 48px;
 }
 
 .column__title {
   font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.6em;
   color: #f2f2f2;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+}
+
+.column__text {
+  line-height: 1.7em;
+  padding-bottom: 46px;
 }
 
 .column--sedans {
@@ -52,8 +84,8 @@ body {
 
 .button {
   position: relative;
-  padding: 0.5em 1em;
-  font-size: 1.2em;
+  padding: 0.97em 2.11em;
+  font-size: 1em;
   border: none;
   background: none;
   outline: none;
