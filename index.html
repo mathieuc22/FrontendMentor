@@ -21,13 +21,13 @@
       <div class="content__text">
         Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
       </div>
-      <form class="content__form">
+      <form class="content__form" id="email-form" novalidate>
         <div class="content__input-set">
-          <input class="content__input error" type="email" name="email" id="email" placeholder="Email Address" required>
+          <input class="content__input" type="email" name="email" id="email" placeholder="Email Address">
           <img class="error-icon" src="images/icon-error.svg" alt="icon error">
           <div class="error-message">Please provide a valid email</div>
         </div>
-        <button class="content__btn"><img src="images/icon-arrow.svg" alt=""></button>
+        <button class="content__btn" type="submit" form="email-form"><img src="images/icon-arrow.svg" alt=""></button>
       </form>
     </div>
     

@@ -102,6 +102,10 @@ main {
     position: relative;
     z-index: 30;
     width: 66.9%;
+    & input:focus {
+      outline-style: none;
+      border: 1px solid $color-Desaturated-Red;
+    }
   }
   &__input-set {
     position: relative;
@@ -156,12 +160,13 @@ main {
   font-weight: 600;
 }
 
-.alert {
+.error {
   border: 2px solid red;
   position: relative;
 }
 
 .error-icon {
+  display: none;
   position: absolute;
   top: 50%;
   right: 100px;
@@ -169,8 +174,10 @@ main {
 }
 
 .error-message {
+  display: none;
   position: absolute;
   bottom: -50%;
   left: 32px;
   font-size: 0.9em;
+  color: $color-Soft-Red;
 }
