@@ -28,12 +28,14 @@ Users should be able to:
 
 [<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
 
+[<img src="./Screenshot_active.png" height="450px"/>](./Screenshot_active.png)
+
 [<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/mathieuc22/base-apparel-coming-soon-master)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/base-apparel-coming-soon-master/
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/base-apparel-coming-soon-master/)
 
 ## My process
 
