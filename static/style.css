@@ -18,12 +18,23 @@ body {
   background-color: #f2f2f2;
   position: relative;
   height: 100%;
+}
+
+body {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: unset;
+    padding: 88px 0;
+  }
 }
 
 .card {
@@ -35,6 +46,17 @@ body {
   height: 500px;
   border-radius: 7px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    height: 1326px;
+  }
 }
 
 .column {
@@ -68,6 +90,12 @@ body {
 .column__text {
   line-height: 1.7em;
   padding-bottom: 46px;
+}
+
+@media screen and (max-width: 768px) {
+  .column__text {
+    padding-bottom: unset;
+  }
 }
 
 .column--sedans {
