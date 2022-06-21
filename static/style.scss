@@ -39,6 +39,12 @@ body {
   position: relative;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .logo {
   padding-bottom: 8px;
   z-index: 99;
@@ -83,6 +89,7 @@ header.modal-open {
   padding: 0;
   top: 0;
   position: fixed;
+  z-index: 99;
 }
 
 .mobile-nav-toggle {
@@ -99,7 +106,7 @@ header.modal-open {
 .navbar {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 32.5px;
   &__link {
     position: relative;
     padding-bottom: 8px;
@@ -145,11 +152,12 @@ header.modal-open {
 }
 
 .hero {
+  position: relative;
   @media screen and (max-width: 768px) {
     height: 650px;
   }
-  position: relative;
   &__title {
+    z-index: 50;
     position: absolute;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
@@ -188,11 +196,14 @@ header.modal-open {
   }
   &__illustration {
     width: 100%;
+    display: block;
+    filter: brightness(60%);
     @media screen and (max-width: 768px) {
       display: none;
     }
     &--mobile {
       display: none;
+      filter: unset;
       @media screen and (max-width: 768px) {
         display: block;
         max-height: 100%;
@@ -212,7 +223,7 @@ header.modal-open {
     padding: $padding-small $padding-small 0 $padding-small;
   }
   @media screen and (max-width: 768px) {
-    padding: $padding-mobile $padding-mobile 0 $padding-mobile;
+    padding: 70px $padding-mobile 0 $padding-mobile;
   }
   &__content {
     position: absolute;
@@ -230,7 +241,8 @@ header.modal-open {
     @media screen and (max-width: 768px) {
       position: relative;
       right: unset;
-      width: 100%;
+      width: 90%;
+      margin: auto;
       text-align: center;
       padding: 48px 0;
     }
@@ -284,6 +296,7 @@ header.modal-open {
   }
   @media screen and (max-width: 768px) {
     padding: $padding-mobile;
+    padding-top: 48px;
     align-items: center;
   }
   &__title {
@@ -294,8 +307,8 @@ header.modal-open {
     font-weight: 300;
     margin-bottom: 80px;
     @media screen and (max-width: 1280px) {
-      font-size: 2.8em;
-      margin-bottom: 40px;
+      font-size: 2.1em;
+      margin-bottom: 48px;
     }
     @media screen and (max-width: 1024px) {
       font-size: 2.3em;
@@ -408,6 +421,7 @@ header.modal-open {
 }
 
 footer {
+  flex: 1;
   display: flex;
   justify-content: space-between;
   background-color: $color-Black;
