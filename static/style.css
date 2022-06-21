@@ -17,6 +17,7 @@ body {
   color: dimgray;
   background-color: #fff;
   position: relative;
+  max-width: 1440px;
 }
 
 body {
