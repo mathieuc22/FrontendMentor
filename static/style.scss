@@ -99,6 +99,7 @@ header.modal-open {
     top: 0;
     right: $padding-mobile;
     position: absolute;
+    cursor: pointer;
     z-index: 99;
   }
 }
@@ -502,6 +503,7 @@ footer {
 }
 
 .hover-underline {
+  cursor: pointer;
   &:after {
     content: "";
     position: absolute;

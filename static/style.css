@@ -106,6 +106,7 @@ header.modal-open {
     top: 0;
     right: 24px;
     position: absolute;
+    cursor: pointer;
     z-index: 99;
   }
 }
@@ -718,6 +719,10 @@ footer {
   .copyright {
     margin-top: 10px;
   }
+}
+
+.hover-underline {
+  cursor: pointer;
 }
 
 .hover-underline:after {
