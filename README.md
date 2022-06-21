@@ -25,9 +25,24 @@ Users should be able to:
 
 [<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
 
+[<img src="./Screenshot_hover.png" height="450px"/>](./Screenshot_hover.png)
+
 [<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/mathieuc22/3-column-preview-card-component-main)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/3-column-preview-card-component-main/
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/3-column-preview-card-component-main/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Sass and CSS custom properties
+- Flexbox
+- [Google font](https://fonts.googleapis.com) - For fonts
+
+## Author
+
+- Frontend Mentor - [Nervous Buffalo](https://www.frontendmentor.io/profile/mathieuc22)
