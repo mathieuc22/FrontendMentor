@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/mathieuc22/loopstudios-landing-page-main)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/loopstudios-landing-page-main/
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/loopstudios-landing-page-main/)
 
 ## My process
 
