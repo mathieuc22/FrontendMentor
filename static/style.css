@@ -54,8 +54,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 90%;
-    height: 1326px;
+    width: 87%;
+    height: unset;
   }
 }
 
@@ -77,6 +77,15 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    height: 442px;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
 }
 
 .column__title {
