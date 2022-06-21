@@ -52,7 +52,6 @@ body {
 body {
   height: 100%;
   display: flex;
-  align-items: center;
   @media screen and (max-width: 768px) {
     height: unset;
     padding: 88px 0;
@@ -63,6 +62,7 @@ body {
 .card {
   display: flex;
   margin: auto;
+  margin-top: 21.25vh;
   width: 921px;
   height: 500px;
   border-radius: 7px;
