@@ -42,6 +42,9 @@ body {
 .logo {
   padding-bottom: 8px;
   z-index: 99;
+  @media screen and (max-width: 1280px) {
+    width: 145px;
+  }
   &--footer {
     padding-bottom: unset;
     width: 144px;
@@ -70,7 +73,7 @@ header {
     padding: 0 $padding-small;
   }
   @media screen and (max-width: 768px) {
-    top: $padding-mobile;
+    top: 40px;
     padding: 0 $padding-mobile;
   }
 }
@@ -79,6 +82,7 @@ header.modal-open {
   height: 100vh;
   padding: 0;
   top: 0;
+  position: fixed;
 }
 
 .mobile-nav-toggle {
@@ -119,15 +123,23 @@ header.modal-open {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 25px;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  &.navbar__link {
+    padding-bottom: unset;
+    width: max-content;
   }
   &.mobile-nav-toggle {
     position: absolute;
-    top: $padding-mobile;
+    top: 40px;
     right: $padding-mobile;
   }
   &.logo {
     position: absolute;
-    top: $padding-mobile;
+    top: 40px;
     left: $padding-mobile;
   }
 }
@@ -447,7 +459,8 @@ footer {
     cursor: pointer;
     padding-bottom: 8px;
     @media screen and (max-width: 768px) {
-      padding-bottom: 20px;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
     }
   }
 }

@@ -24,6 +24,12 @@ body {
   z-index: 99;
 }
 
+@media screen and (max-width: 1280px) {
+  .logo {
+    width: 145px;
+  }
+}
+
 .logo--footer {
   padding-bottom: unset;
   width: 144px;
@@ -66,7 +72,7 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
-    top: 24px;
+    top: 40px;
     padding: 0 24px;
   }
 }
@@ -75,6 +81,7 @@ header.modal-open {
   height: 100vh;
   padding: 0;
   top: 0;
+  position: fixed;
 }
 
 .mobile-nav-toggle {
@@ -130,17 +137,28 @@ header.modal-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 25px;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.mobile.navbar__link {
+  padding-bottom: unset;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .mobile.mobile-nav-toggle {
   position: absolute;
-  top: 24px;
+  top: 40px;
   right: 24px;
 }
 
 .mobile.logo {
   position: absolute;
-  top: 24px;
+  top: 40px;
   left: 24px;
 }
 
@@ -641,7 +659,8 @@ footer {
 
 @media screen and (max-width: 768px) {
   .footer-links__link {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
   }
 }
 

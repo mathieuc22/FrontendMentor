@@ -7,6 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
           document.body.classList.remove("modal-open")
           document.querySelector("header").classList.remove("modal-open")
           navbar.classList.remove("mobile");
+          navbar.querySelectorAll("*").forEach((elt) => {
+            elt.classList.remove("mobile");
+          });
           document.querySelector(".logo").classList.remove("mobile")
           document.querySelector(".mobile-nav-toggle").classList.remove("mobile")
           document.querySelector(".mobile-nav-toggle").src="./images/icon-hamburger.svg"
@@ -14,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
           document.body.classList.add("modal-open")
           document.querySelector("header").classList.add("modal-open")
           navbar.classList.add("mobile");
+          navbar.querySelectorAll("*").forEach((elt) => {
+            elt.classList.add("mobile");
+          });
           document.querySelector(".logo").classList.add("mobile")
           document.querySelector(".mobile-nav-toggle").classList.add("mobile")
           document.querySelector(".mobile-nav-toggle").src="./images/icon-close.svg"
