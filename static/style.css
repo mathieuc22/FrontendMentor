@@ -120,6 +120,7 @@ body {
 .button {
   position: relative;
   padding: 14.5px 31.6px;
+  border: none;
   font-size: 1em;
   background: none;
   outline: none;
