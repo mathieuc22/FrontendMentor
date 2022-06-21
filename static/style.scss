@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+// font-family: 'Inter', sans-serif;
+
+// Variables
+
+// Colors
+
+// Primary
+$color-primary-Dark-Blue: hsl(240, 38%, 20%);
+$color-primary-Grayish-Blue: hsl(240, 18%, 77%);
+
+// Typography
+$font-size-default: 32px;
+$font-weight-default: 300;
+$font-family-default: "Inter", sans-serif;
+
+// Base
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  color: $color-primary-Dark-Blue;
+  background-color: $color-primary-Grayish-Blue;
+  position: relative;
+  height: 100%;
+}
+
+// Components
