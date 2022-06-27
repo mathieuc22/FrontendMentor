@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+// Variables
+
+// Colors
+
+// Primary
+$color-primary-Dark-cyan: hsl(158, 36%, 37%);
+$color-primary-Cream: hsl(30, 38%, 92%);
+
+// Neutral
+$color-neutral-Very-dark-blue: hsl(212, 21%, 14%);
+$color-neutral-Dark-grayish-blue: hsl(228, 12%, 48%);
+$color-neutral-White: hsl(0, 0%, 100%);
+
+// Typography
+$font-size-default: 14px;
+$font-weight-default: 500;
+$font-family-default: 'Montserrat', sans-serif;
+
+// font-family: 'Fraunces', serif;
+// font-family: 'Montserrat', sans-serif;
+
+// Base
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  color: $color-neutral-Dark-grayish-blue;
+  background: $color-primary-Cream;
+  position: relative;
+}
