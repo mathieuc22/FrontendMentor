@@ -17,5 +17,105 @@ body {
   color: #6c7289;
   background: #f2ebe3;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.card {
+  height: 450px;
+  width: 600px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__product {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.card__title {
+  font-family: "Fraunces", serif;
+  font-size: 2.15em;
+  line-height: 31px;
+  color: #1c232b;
+}
+
+.card__description {
+  line-height: 23px;
+}
+
+.card__price {
+  font-family: "Fraunces", serif;
+  font-size: 2.2em;
+  color: #3c8067;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__price--old {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.42em;
+  color: #6c7289;
+  text-decoration: line-through;
+  margin-left: 24px;
+}
+
+.button {
+  background-color: #3c8067;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15.5px;
+  font-weight: 700;
+  text-decoration: none;
+  height: 48px;
+  width: 100%;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button img {
+  margin-right: 11px;
 }
 /*# sourceMappingURL=style.css.map */

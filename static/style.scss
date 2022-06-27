@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 
 // Variables
 
@@ -16,7 +16,7 @@ $color-neutral-White: hsl(0, 0%, 100%);
 // Typography
 $font-size-default: 14px;
 $font-weight-default: 500;
-$font-family-default: 'Montserrat', sans-serif;
+$font-family-default: "Montserrat", sans-serif;
 
 // font-family: 'Fraunces', serif;
 // font-family: 'Montserrat', sans-serif;
@@ -40,4 +40,73 @@ body {
   color: $color-neutral-Dark-grayish-blue;
   background: $color-primary-Cream;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+// Components
+.card {
+  height: 450px;
+  width: 600px;
+  background: $color-neutral-White;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  &__content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__product {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  &__title {
+    font-family: "Fraunces", serif;
+    font-size: 2.15em;
+    line-height: 31px;
+    color: $color-neutral-Very-dark-blue;
+  }
+  &__description {
+    line-height: 23px;
+  }
+  &__price {
+    font-family: "Fraunces", serif;
+    font-size: 2.2em;
+    color: $color-primary-Dark-cyan;
+    display: flex;
+    align-items: center;
+    &--old {
+      font-family: $font-family-default;
+      font-size: 0.42em;
+      color: $color-neutral-Dark-grayish-blue;
+      text-decoration: line-through;
+      margin-left: 24px;
+    }
+  }
+}
+
+.button {
+  background-color: $color-primary-Dark-cyan;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15.5px;
+  font-weight: 700;
+  text-decoration: none;
+  height: 48px;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & img {
+    margin-right: 11px;
+  }
 }
