@@ -23,16 +23,16 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- [<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
+[<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
 
 [<img src="./Screenshot_hover.png" height="450px"/>](./Screenshot_hover.png)
 
-[<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png) -->
+[<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/coding-bootcamp-testimonials-slider-master)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/coding-bootcamp-testimonials-slider-master/)
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/product-preview-card-component-main)
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/product-preview-card-component-main/)
 
 ## My process
 
