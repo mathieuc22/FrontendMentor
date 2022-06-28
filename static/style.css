@@ -168,6 +168,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .button img {
@@ -176,5 +178,10 @@ body {
 
 .button:hover {
   background-color: #1c3b30;
+}
+
+.button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 /*# sourceMappingURL=style.css.map */

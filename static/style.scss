@@ -137,10 +137,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease-in-out;
   & img {
     margin-right: 11px;
   }
   &:hover {
     background-color: darken($color: $color-primary-Dark-cyan, $amount: 20);
+  }
+  &:active {
+    transform: translateY(2px);
   }
 }
