@@ -173,4 +173,8 @@ body {
 .button img {
   margin-right: 11px;
 }
+
+.button:hover {
+  background-color: #1c3b30;
+}
 /*# sourceMappingURL=style.css.map */

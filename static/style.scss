@@ -140,4 +140,7 @@ body {
   & img {
     margin-right: 11px;
   }
+  &:hover {
+    background-color: darken($color: $color-primary-Dark-cyan, $amount: 20);
+  }
 }
