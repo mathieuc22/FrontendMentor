@@ -29,6 +29,13 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    height: unset;
+  }
+}
+
 .card {
   height: 450px;
   width: 600px;
@@ -38,6 +45,36 @@ body {
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: unset;
+    width: unset;
+    max-width: 500px;
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card__illustration {
+    display: none;
+  }
+}
+
+.card__illustration--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .card__illustration--mobile {
+    display: block;
+    width: 100%;
+  }
 }
 
 .card__content {
@@ -52,6 +89,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .card__content {
+    gap: 15px;
+  }
 }
 
 .card__product {
@@ -71,6 +114,12 @@ body {
   line-height: 23px;
 }
 
+@media screen and (max-width: 768px) {
+  .card__description {
+    font-size: 12.5px;
+  }
+}
+
 .card__price {
   font-family: "Fraunces", serif;
   font-size: 2.2em;
@@ -81,6 +130,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card__price {
+    margin-top: 15px;
+  }
 }
 
 .card__price--old {
