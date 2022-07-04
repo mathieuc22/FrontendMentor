@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+// Variables
+
+// Colors
+$color-primary-Cyan: hsl(179, 62%, 43%);
+$color-primary-Bright-Yellow: hsl(71, 73%, 54%);
+$color-neutral-Light-Gray: hsl(204, 43%, 93%);
+$color-neutral-Grayish-Blue: hsl(218, 22%, 67%);
+$color-mainBG: #fff;
+
+// Typography
+$font-size-default: 16px;
+$font-weight-default: 400;
+$font-family-default: "Karla", sans-serif;
+
+// Base
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  background-color: $color-neutral-Light-Gray;
+  position: relative;
+}
