@@ -32,4 +32,98 @@ body {
   font-weight: $font-weight-default;
   background-color: $color-neutral-Light-Gray;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 700;
+  background-color: $color-primary-Bright-Yellow;
+  color: $color-mainBG;
+  border: none;
+  border-radius: 7px;
+  padding: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.price {
+  font-size: 2em;
+  font-weight: 700;
+  color: $color-mainBG;
+}
+
+.card {
+  overflow: hidden;
+  max-width: 635px;
+  border-radius: 7px;
+  background-color: $color-mainBG;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 15px 30px -15px $color-neutral-Grayish-Blue;
+  &__row {
+    display: flex;
+  }
+  &__item {
+    padding: 40px;
+    flex: 1;
+    position: relative;
+  }
+}
+
+.join {
+  color: $color-neutral-Grayish-Blue;
+  &__title {
+    color: $color-primary-Cyan;
+    margin-bottom: 25px;
+  }
+  &__subtitle {
+    color: $color-primary-Bright-Yellow;
+  }
+  &__content {
+    line-height: 1.7em;
+  }
+}
+
+.subscription {
+  background-color: $color-primary-Cyan;
+  color: $color-mainBG;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__signup {
+    width: 100%;
+  }
+  &__price {
+    color: lighten($color: $color-primary-Cyan, $amount: 30);
+    margin-bottom: 10px;
+  }
+  &__content {
+    margin-bottom: 25px;
+  }
+}
+
+.why {
+  background-color: lighten($color: $color-primary-Cyan, $amount: 4);
+  color: $color-mainBG;
+  &__links {
+    list-style: none;
+    & li {
+      color: lighten($color: $color-primary-Cyan, $amount: 50);
+      font-size: 0.83em;
+      padding: 2.5px;
+    }
+  }
 }

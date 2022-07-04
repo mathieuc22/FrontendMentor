@@ -16,5 +16,139 @@ body {
   font-weight: 400;
   background-color: #e5eff5;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 700;
+  background-color: #c0df34;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 16px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.price {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card {
+  overflow: hidden;
+  max-width: 635px;
+  border-radius: 7px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 5px 15px 30px -15px #98a6bd;
+          box-shadow: 5px 15px 30px -15px #98a6bd;
+}
+
+.card__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__item {
+  padding: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.join {
+  color: #98a6bd;
+}
+
+.join__title {
+  color: #2ab2af;
+  margin-bottom: 25px;
+}
+
+.join__subtitle {
+  color: #c0df34;
+}
+
+.join__content {
+  line-height: 1.7em;
+}
+
+.subscription {
+  background-color: #2ab2af;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subscription__signup {
+  width: 100%;
+}
+
+.subscription__price {
+  color: #8fe5e3;
+  margin-bottom: 10px;
+}
+
+.subscription__content {
+  margin-bottom: 25px;
+}
+
+.why {
+  background-color: #2ec2c0;
+  color: #fff;
+}
+
+.why__links {
+  list-style: none;
+}
+
+.why__links li {
+  color: #e2f8f8;
+  font-size: 0.83em;
+  padding: 2.5px;
 }
 /*# sourceMappingURL=style.css.map */
