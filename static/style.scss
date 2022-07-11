@@ -44,13 +44,25 @@ main {
   background-repeat: no-repeat;
   background-size: 50% 155px;
   height: 100%;
+
+  @media screen and (max-width: 425px) {
+    background-size: 75% 10.7vh;
+  }
 }
 
 .slide {
   width: 100%;
   margin: auto;
-}
 
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    height: 100%;
+  }
+}
 
 .content {
   position: relative;
@@ -63,15 +75,50 @@ main {
   margin-top: 26.75vh;
   margin-left: 11.45%;
 
+  @media screen and (max-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: unset;
+    height: unset;
+    padding-top: 28px;
+    margin-top: unset;
+    margin-left: unset;
+    font-size: 18px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    background-position: top 0 left 50%;
+    background-size: 60px 50px;
+  }
+
   &__quote {
     line-height: 1.37em;
     padding-bottom: 37px;
+
+    @media screen and (max-width: 425px) {
+      padding-bottom: 11px;
+    }
   }
 
   &__developper {
     display: flex;
     gap: 8px;
     font-size: 0.64em;
+
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+      font-size: 0.84em;
+      gap: 2px;
+    }
   }
 
   &__name {
@@ -84,7 +131,6 @@ main {
     color: $color-primary-Grayish-Blue;
   }
 }
-
 
 .illustration {
   position: absolute;
@@ -99,10 +145,18 @@ main {
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 425px) {
+    position: relative;
+    right: unset;
+    top: unset;
+    width: unset;
+    height: 46vh;
+  }
+
   &__image {
     position: relative;
     width: 77%;
-    
+
     & img {
       box-shadow: 0px 25px 37px -30px $color-primary-Dark-Blue;
       display: block;
@@ -128,10 +182,18 @@ main {
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+
     & > * {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    @media screen and (max-width: 425px) {
+      left: 50%;
+      transform: translateX(-50%) translateY(50%);
+      width: 80px;
+      height: 40px;
     }
   }
 }
