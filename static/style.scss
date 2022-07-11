@@ -181,6 +181,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
+    user-select: none;
     cursor: pointer;
 
     & > * {
@@ -189,6 +191,11 @@ main {
       justify-content: center;
       flex: 1;
       height: 100%;
+      transition: all 0.2s ease-in-out;
+      
+      &:hover {
+        background-color: $color-primary-Grayish-Blue;
+      }
     }
 
     & img {

@@ -217,6 +217,11 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  overflow: hidden;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 
@@ -234,6 +239,12 @@ main {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.illustration__slider > *:hover {
+  background-color: #babacf;
 }
 
 .illustration__slider img {
