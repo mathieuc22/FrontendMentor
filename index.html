@@ -20,15 +20,26 @@
   <body>
     <main>
       <div x-data="slides()" class="slide">
-        <div class="slide__content">
-          <div x-text="datas[selected].quote" class="slide__quote"></div>
-          <div x-text="datas[selected].developer" class="slide__developper"></div>
-          <div x-text="datas[selected].job" class="slide__title"></div>
+        <div class="col content">
+          <div x-text="datas[selected].quote" class="content__quote"></div>
+          <div class="content__developper">
+            <div x-text="datas[selected].developer" class="content__name"></div>
+            <div x-text="datas[selected].job" class="content__job"></div>
+          </div>
         </div>
-        <img :src="datas[selected].image" alt="tanya" class="slide__image" />
-        <div class="slider">
-          <img @click="selected > 0 ? selected-- : selected = datas.length - 1" src="images/icon-prev.svg" alt="icon previous" />
-          <img @click="selected < datas.length - 1 ? selected++ : selected = 0" src="images/icon-next.svg" alt="icon next" />
+        <div class="col illustration">
+          <div class="illustration__image">
+            <img :src="datas[selected].image" alt="tanya" />
+            <div class="illustration__slider">
+              <div>
+                <img @click="selected > 0 ? selected-- : selected = datas.length - 1" src="images/icon-prev.svg" alt="icon previous" />
+              </div>
+              <div>
+                <img @click="selected < datas.length - 1 ? selected++ : selected = 0" src="images/icon-next.svg" alt="icon next" />
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
