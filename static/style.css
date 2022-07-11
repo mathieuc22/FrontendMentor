@@ -230,6 +230,14 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+
+.illustration__slider img {
+  width: unset;
 }
 
 @media screen and (max-width: 425px) {

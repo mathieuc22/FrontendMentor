@@ -31,12 +31,11 @@
           <div class="illustration__image">
             <img :src="datas[selected].image" alt="tanya" />
             <div class="illustration__slider">
-              <div>
-                <img @click="selected > 0 ? selected-- : selected = datas.length - 1" src="images/icon-prev.svg" alt="icon previous" />
+              <div @click="selected > 0 ? selected-- : selected = datas.length - 1">
+                <img src="images/icon-prev.svg" alt="icon previous" />
               </div>
-              <div>
-                <img @click="selected < datas.length - 1 ? selected++ : selected = 0" src="images/icon-next.svg" alt="icon next" />
-
+              <div @click="selected < datas.length - 1 ? selected++ : selected = 0">
+                <img src="images/icon-next.svg" alt="icon next" />
               </div>
             </div>
           </div>
