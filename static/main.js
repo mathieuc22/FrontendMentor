@@ -47,7 +47,7 @@ document.addEventListener("alpine:init", () => {
     getIpInfo() {
       this.loading = true;
       fetch(
-        `https://geo.ipify.org/api/v2/country,city?apiKey=xxx&ipAddress=${this.ip}`
+        `http://localhost:3000/api/${this.ip}`
       )
         .then((r) => r.json())
         .then((json) => {
@@ -55,7 +55,7 @@ document.addEventListener("alpine:init", () => {
           this.loaded = true;
           this.loading = false;
           map.setView(
-            new L.LatLng(this.datas.location.lat, this.datas.location.lng),
+            new L.LatLng(this.ipInfo.location.lat, this.ipInfo.location.lng),
             8
           );
         });
