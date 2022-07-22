@@ -1,7 +1,7 @@
 // Leaflet interactive maps
 // initialize the map on the "map" div with a given center and zoom
 var map = L.map("map", {
-  center: [50.5, 30.5],
+  center: [37.40599, -122.078514],
   zoom: 13,
   zoomControl: false,
 });
@@ -43,7 +43,6 @@ document.addEventListener("alpine:init", () => {
       },
       isp: "Google LLC",
     },
-    loaded: false,
     getIpInfo() {
       this.loading = true;
       fetch(
@@ -52,7 +51,6 @@ document.addEventListener("alpine:init", () => {
         .then((r) => r.json())
         .then((json) => {
           this.ipInfo = json;
-          this.loaded = true;
           this.loading = false;
           map.setView(
             new L.LatLng(this.ipInfo.location.lat, this.ipInfo.location.lng),
