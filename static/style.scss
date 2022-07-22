@@ -45,7 +45,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.15));
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15));
 }
 
 #map {
@@ -54,6 +54,16 @@ main {
   width: 100%;
   top: 0;
   left: 0;
+}
+
+.spinner {
+  color: $color-main-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & i {
+    font-size: 15px;
+  }
 }
 
 .title {
@@ -92,7 +102,7 @@ main {
   bottom: 0;
   transform: translateY(50%);
   padding: 30px;
-  
+
   th {
     color: $color-Dark-Gray;
     font-size: 0.8em;
