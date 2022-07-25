@@ -6,6 +6,12 @@ var map = L.map("map", {
   zoomControl: false,
 });
 
+var locationIcon = L.icon({
+  iconUrl: "static/images/icon-location.svg",
+});
+
+L.marker([37.40599, -122.078514], { icon: locationIcon }).addTo(map);
+
 L.tileLayer("http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}", {
   maxZoom: 20,
   subdomains: ["mt0", "mt1", "mt2", "mt3"],
@@ -15,6 +21,7 @@ document.addEventListener("alpine:init", () => {
   Alpine.data("tracker", () => ({
     ip: "",
     loading: false,
+    timezone: "",
     ipInfo: {
       ip: "8.8.8.8",
       location: {
@@ -43,11 +50,12 @@ document.addEventListener("alpine:init", () => {
       },
       isp: "Google LLC",
     },
+    formatTimezone() {
+      this.timezone = "UTC " + this.ipInfo.location.timezone;
+    },
     getIpInfo() {
       this.loading = true;
-      fetch(
-        `http://localhost:3000/api/${this.ip}`
-      )
+      fetch(`https://gentle-atoll-09797.herokuapp.com/api/${this.ip}`)
         .then((r) => r.json())
         .then((json) => {
           this.ipInfo = json;
@@ -56,6 +64,10 @@ document.addEventListener("alpine:init", () => {
             new L.LatLng(this.ipInfo.location.lat, this.ipInfo.location.lng),
             8
           );
+
+          L.marker([this.ipInfo.location.lat, this.ipInfo.location.lng], {
+            icon: locationIcon,
+          }).addTo(map);
         });
     },
   }));

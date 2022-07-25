@@ -61,7 +61,7 @@
               <tr>
                 <td x-text="ipInfo.ip"></td>
                 <td x-text="ipInfo.location.city, ipInfo.location.country, ipInfo.location.postalCode"></td>
-                <td x-text="ipInfo.location.timezone"></td>
+                <td x-data="formatTimezone" x-text="timezone"></td>
                 <td x-text="ipInfo.isp"></td>
                 <!-- add offset value dynamically using the API -->
               </tr>
