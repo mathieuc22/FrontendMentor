@@ -22,6 +22,7 @@ document.addEventListener("alpine:init", () => {
     ip: "",
     loading: false,
     timezone: "",
+    location: "",
     ipInfo: {
       ip: "8.8.8.8",
       location: {
@@ -52,6 +53,9 @@ document.addEventListener("alpine:init", () => {
     },
     formatTimezone() {
       this.timezone = "UTC " + this.ipInfo.location.timezone;
+    },
+    formatLocation() {
+      this.location = this.ipInfo.location.city + ', ' + this.ipInfo.location.region + ' ' + this.ipInfo.location.postalCode;
     },
     getIpInfo() {
       this.loading = true;

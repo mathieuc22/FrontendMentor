@@ -27,7 +27,10 @@
     ></script>
     <script type="module" src="static/main.js"></script>
     <script src="https://unpkg.com/alpinejs" defer></script>
-    <script src="https://kit.fontawesome.com/a76bab607b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/a76bab607b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Frontend Mentor | IP Address Tracker</title>
   </head>
   <body>
@@ -42,32 +45,55 @@
             pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
             x-model="ip"
           />
-          <button @click="getIpInfo" :disabled="loading" class="ip-form__button">
+          <button
+            @click="getIpInfo"
+            :disabled="loading"
+            class="ip-form__button"
+          >
             <div x-show="loading" class="spinner fa-3x">
               <i class="fas fa-spinner fa-pulse"></i>
             </div>
-            <svg x-show="!loading" xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+            <svg
+              x-show="!loading"
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="14"
+            >
+              <path
+                fill="none"
+                stroke="#FFF"
+                stroke-width="3"
+                d="M2 1l6 6-6 6"
+              />
+            </svg>
           </button>
         </div>
-        <table class="info-table">
-          <thead>
-            <tr>
-                <th>IP Address</th>
-                <th>Location</th>
-                <th>Timezone</th>
-                <th>ISP</th>
-            </tr>
-            <tbody>
-                <tr>
-                  <td x-text="ipInfo.ip"></td>
-                  <td x-text="ipInfo.location.city, ipInfo.location.country, ipInfo.location.postalCode"></td>
-                  <td x-data="formatTimezone" x-text="timezone"></td>
-                  <td x-text="ipInfo.isp"></td>
-                  <!-- add offset value dynamically using the API -->
-                </tr>
-            </tbody>
-          </thead>
-        </table>
+        <ul class="info-table">
+          <li class="info-card info-card--border">
+            <div class="info-card__title">IP Address</div>
+            <div class="info-card__data" x-text="ipInfo.ip"></div>
+          </li>
+          <li class="info-card info-card--border">
+            <div class="info-card__title">Location</div>
+            <div
+              class="info-card__data"
+              x-data="formatLocation"
+              x-text="location"
+            ></div>
+          </li>
+          <li class="info-card info-card--border">
+            <div class="info-card__title">Timezone</div>
+            <div
+              class="info-card__data"
+              x-data="formatTimezone"
+              x-text="timezone"
+            ></div>
+          </li>
+          <li class="info-card">
+            <div class="info-card__title" class="info-card__title">ISP</div>
+            <div class="info-card__data" x-text="ipInfo.isp"></div>
+          </li>
+        </ul>
       </div>
       <div id="map"></div>
     </main>
