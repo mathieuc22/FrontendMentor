@@ -12,6 +12,8 @@ $font-size-default: 18px;
 $font-weight-default: 400;
 $font-family-default: "Rubik", sans-serif;
 
+$mq-max-width: 768px;
+
 // Base
 
 *,
@@ -55,6 +57,14 @@ main {
   flex-direction: column;
   align-items: center;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15));
+
+  @media screen and (max-width: $mq-max-width) {
+    background-size: cover;
+    font-size: 14px;
+    height: 300px;
+    min-height: unset;
+    max-height: unset;
+  }
 }
 
 #map {
@@ -86,10 +96,14 @@ main {
   border-radius: 17px;
   overflow: hidden;
 
+  @media screen and (max-width: $mq-max-width) {
+    width: 90%;
+  }
+
   &__input {
     flex: 1;
     padding: 23px;
-    font-size: 1em;
+    font-size: 18px;
     border: none;
 
     &:focus {
@@ -125,6 +139,17 @@ main {
   list-style: none;
   display: flex;
   gap: 2%;
+
+  @media screen and (max-width: $mq-max-width) {
+    height: 295px;
+    flex-direction: column;
+    width: 90%;
+    min-width: unset;
+    gap: unset;
+    align-items: center;
+    text-align: center;
+    bottom: -20px;
+  }
 }
 
 .info-card {
@@ -141,6 +166,12 @@ main {
     border-right: 1.5px solid lighten($color: $color-Dark-Gray, $amount: 30);
   }
 
+  @media screen and (max-width: $mq-max-width) {
+    content: '';
+    position: unset;
+    border-right: unset;
+  }
+
   &__title {
     color: $color-Dark-Gray;
     font-size: 0.72em;
@@ -149,6 +180,10 @@ main {
     text-transform: uppercase;
     letter-spacing: 1.8px;
     margin-bottom: 10px;
+
+    @media screen and (max-width: $mq-max-width) {
+      text-align: unset;
+    }
   }
 
   &__data {

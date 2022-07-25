@@ -8,9 +8,12 @@ var map = L.map("map", {
 
 var locationIcon = L.icon({
   iconUrl: "static/images/icon-location.svg",
+  iconAnchor: [23, 56]
 });
 
-L.marker([37.40599, -122.078514], { icon: locationIcon }).addTo(map);
+let marker = L.marker([37.40599, -122.078514], {
+  icon: locationIcon
+}).addTo(map);
 
 L.tileLayer("http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}", {
   maxZoom: 20,
@@ -55,7 +58,12 @@ document.addEventListener("alpine:init", () => {
       this.timezone = "UTC " + this.ipInfo.location.timezone;
     },
     formatLocation() {
-      this.location = this.ipInfo.location.city + ', ' + this.ipInfo.location.region + ' ' + this.ipInfo.location.postalCode;
+      this.location =
+        this.ipInfo.location.city +
+        ", " +
+        this.ipInfo.location.region +
+        " " +
+        this.ipInfo.location.postalCode;
     },
     getIpInfo() {
       this.loading = true;
@@ -64,14 +72,19 @@ document.addEventListener("alpine:init", () => {
         .then((json) => {
           this.ipInfo = json;
           this.loading = false;
+          this.timezone = "UTC " + this.ipInfo.location.timezone;
+          this.location =
+            this.ipInfo.location.city +
+            ", " +
+            this.ipInfo.location.region +
+            " " +
+            this.ipInfo.location.postalCode;
           map.setView(
             new L.LatLng(this.ipInfo.location.lat, this.ipInfo.location.lng),
             8
           );
 
-          L.marker([this.ipInfo.location.lat, this.ipInfo.location.lng], {
-            icon: locationIcon,
-          }).addTo(map);
+          marker.setLatLng([this.ipInfo.location.lat, this.ipInfo.location.lng]);
         });
     },
   }));
