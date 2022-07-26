@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- [<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
+[<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
 
 [<img src="./Screenshot_hover.png" height="450px"/>](./Screenshot_hover.png)
 
-[<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png) -->
+[<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
 ### Links
 
@@ -43,6 +43,9 @@ Users should be able to:
 - Semantic HTML5 markup
 - Sass and CSS custom properties
 - Flexbox
+- [IP Geolocation API](https://geo.ipify.org/) - For IP Geolocation
+- [Alpine.js](https://alpinejs.dev/) - JavaScript framework
+- [Leaflet ](https://leafletjs.com/) - For interactive maps
 - [Google font](https://fonts.googleapis.com) - For fonts
 
 ## Author
