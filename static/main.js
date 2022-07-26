@@ -23,6 +23,14 @@ L.tileLayer("http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}", {
 document.addEventListener("alpine:init", () => {
   Alpine.data("tracker", () => ({
     ip: "",
+    isIP(ip) {
+      var re = /^([0-9]{1,3}\.){3}[0-9]{1,3}$/;
+      return re.test(ip);
+    },
+    isDomain(ip) {
+      var re = /^(((?!\-))(xn\-\-)?[a-z0-9\-_]{0,61}[a-z0-9]{1,1}\.)*(xn\-\-)?([a-z0-9\-]{1,61}|[a-z0-9\-]{1,30})\.[a-z]{2,}$/;
+      return re.test(ip);
+    },
     loading: false,
     timezone: "",
     location: "",
@@ -68,9 +76,20 @@ document.addEventListener("alpine:init", () => {
     init() {
       this.getIpInfo();
     },
+    submitData() {
+      // Ensures all fields have data before submitting
+      if (this.ip && !this.isIP(this.ip) && !this.isDomain(this.ip)) {
+        alert("Please fill out a correct ip and try again!");
+        return;
+      } else {
+        this.getIpInfo();
+      }
+    },
     getIpInfo() {
       this.loading = true;
-      fetch(`https://gentle-atoll-09797.herokuapp.com/api/${this.ip}`)
+      const API = 'https://gentle-atoll-09797.herokuapp.com/api'
+      let url = this.isDomain(this.ip) ? `${API}?domain=${this.ip}` : `${API}?ip=${this.ip}`;
+      fetch(url)
         .then((r) => r.json())
         .then((json) => {
           this.ipInfo = json;
@@ -90,6 +109,9 @@ document.addEventListener("alpine:init", () => {
             this.ipInfo.location.lat,
             this.ipInfo.location.lng,
           ]);
+        })
+        .catch((error) => {
+          alert(error)
         });
     },
   }));

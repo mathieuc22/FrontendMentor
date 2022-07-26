@@ -37,18 +37,20 @@
     <main x-data="tracker">
       <div class="tracker">
         <h1 class="title">IP Address Tracker</h1>
-        <div class="ip-form">
+        <div class="ip-form" 
+        :class="{ 'error' : ip && !isIP(ip) && !isDomain(ip)}">
           <input
             class="ip-form__input"
             placeholder="Search for any IP address or domain"
             required
-            pattern="^([0-9]{1,3}\.){3}[0-9]{1,3}$"
             x-model="ip"
           />
+          <span x-show="ip && !isIP(ip) && !isDomain(ip)" class="error">IP or domain is not valid!</span>
           <button
-            @click="getIpInfo"
-            :disabled="loading"
+            @click="submitData"
+            :disabled="loading || (ip && !isIP(ip) && !isDomain(ip))"
             class="ip-form__button"
+            :class="{ 'disabled' : ip && !isIP(ip) && !isDomain(ip)}"
           >
             <div x-show="loading" class="spinner fa-3x">
               <i class="fas fa-spinner fa-pulse"></i>
@@ -98,7 +100,6 @@
               <div class="info-card__data" x-text="ipInfo.isp"></div>
             </li>
           </ul>
-
         </div>
       </div>
       <div id="map"></div>

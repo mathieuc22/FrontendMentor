@@ -96,6 +96,7 @@ main {
 }
 
 .ip-form {
+  position: relative;
   width: 38.54%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,6 +136,24 @@ main {
 
 .ip-form__button:hover {
   background-color: #454545;
+}
+
+.disabled {
+  cursor: default;
+  background-color: #454545;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.error span {
+  border: none;
+  font-size: 0.7em;
+  color: red;
+  position: absolute;
+  bottom: 3px;
+  left: 23px;
 }
 
 .info-table {

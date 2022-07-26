@@ -90,6 +90,7 @@ main {
 }
 
 .ip-form {
+  position: relative;
   width: 38.54%;
   display: flex;
   height: 58px;
@@ -122,6 +123,24 @@ main {
     &:hover {
       background-color: lighten($color: $color-Very-Dark-Gray, $amount: 10);
     }
+  }
+}
+
+.disabled {
+  cursor: default;
+  background-color: lighten($color: $color-Very-Dark-Gray, $amount: 10);
+}
+
+.error {
+  border: 1px solid red;
+
+  & span {
+    border: none;
+    font-size: 0.7em;
+    color: red;
+    position: absolute;
+    bottom: 3px;
+    left: 23px;
   }
 }
 
