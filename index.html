@@ -68,32 +68,38 @@
             </svg>
           </button>
         </div>
-        <ul class="info-table">
-          <li class="info-card info-card--border">
-            <div class="info-card__title">IP Address</div>
-            <div class="info-card__data" x-text="ipInfo.ip"></div>
-          </li>
-          <li class="info-card info-card--border">
-            <div class="info-card__title">Location</div>
-            <div
-              class="info-card__data"
-              x-data="formatLocation"
-              x-text="location"
-            ></div>
-          </li>
-          <li class="info-card info-card--border">
-            <div class="info-card__title">Timezone</div>
-            <div
-              class="info-card__data"
-              x-data="formatTimezone"
-              x-text="timezone"
-            ></div>
-          </li>
-          <li class="info-card">
-            <div class="info-card__title" class="info-card__title">ISP</div>
-            <div class="info-card__data" x-text="ipInfo.isp"></div>
-          </li>
-        </ul>
+        <div class="info-table">
+          <div x-show="loading" class="spinner fa-3x">
+            <i class="fas fa-spinner fa-pulse"></i>
+          </div>
+          <ul x-show="!loading">
+            <li class="info-card info-card--border">
+              <div class="info-card__title">IP Address</div>
+              <div class="info-card__data" x-text="ipInfo.ip"></div>
+            </li>
+            <li class="info-card info-card--border">
+              <div class="info-card__title">Location</div>
+              <div
+                class="info-card__data"
+                x-data="formatLocation"
+                x-text="location"
+              ></div>
+            </li>
+            <li class="info-card info-card--border">
+              <div class="info-card__title">Timezone</div>
+              <div
+                class="info-card__data"
+                x-data="formatTimezone"
+                x-text="timezone"
+              ></div>
+            </li>
+            <li class="info-card">
+              <div class="info-card__title" class="info-card__title">ISP</div>
+              <div class="info-card__data" x-text="ipInfo.isp"></div>
+            </li>
+          </ul>
+
+        </div>
       </div>
       <div id="map"></div>
     </main>

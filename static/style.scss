@@ -120,7 +120,7 @@ main {
     cursor: pointer;
 
     &:hover {
-      background-color: lighten($color: $color-Very-Dark-Gray, $amount: 10) ;
+      background-color: lighten($color: $color-Very-Dark-Gray, $amount: 10);
     }
   }
 }
@@ -136,9 +136,7 @@ main {
   bottom: 0;
   transform: translateY(50%);
   padding: 30px;
-  list-style: none;
   display: flex;
-  gap: 2%;
 
   @media screen and (max-width: $mq-max-width) {
     height: 295px;
@@ -150,6 +148,29 @@ main {
     text-align: center;
     bottom: -20px;
   }
+
+  & .spinner {
+    flex: 1;
+    color: $color-Very-Dark-Gray;
+    & i {
+      font-size: 30px;
+    }
+  }
+
+  & ul {
+    flex: 1;
+    display: flex;
+    gap: 2%;
+    list-style: none;
+
+    @media screen and (max-width: $mq-max-width) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      bottom: -20px;
+    }
+  }
 }
 
 .info-card {
@@ -157,7 +178,7 @@ main {
   flex: 1;
 
   &--border:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
@@ -167,7 +188,7 @@ main {
   }
 
   @media screen and (max-width: $mq-max-width) {
-    content: '';
+    content: "";
     position: unset;
     border-right: unset;
   }

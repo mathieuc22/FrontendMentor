@@ -8,11 +8,11 @@ var map = L.map("map", {
 
 var locationIcon = L.icon({
   iconUrl: "static/images/icon-location.svg",
-  iconAnchor: [23, 56]
+  iconAnchor: [23, 56],
 });
 
 let marker = L.marker([37.40599, -122.078514], {
-  icon: locationIcon
+  icon: locationIcon,
 }).addTo(map);
 
 L.tileLayer("http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}", {
@@ -65,6 +65,9 @@ document.addEventListener("alpine:init", () => {
         " " +
         this.ipInfo.location.postalCode;
     },
+    init() {
+      this.getIpInfo();
+    },
     getIpInfo() {
       this.loading = true;
       fetch(`https://gentle-atoll-09797.herokuapp.com/api/${this.ip}`)
@@ -83,8 +86,10 @@ document.addEventListener("alpine:init", () => {
             new L.LatLng(this.ipInfo.location.lat, this.ipInfo.location.lng),
             8
           );
-
-          marker.setLatLng([this.ipInfo.location.lat, this.ipInfo.location.lng]);
+          marker.setLatLng([
+            this.ipInfo.location.lat,
+            this.ipInfo.location.lng,
+          ]);
         });
     },
   }));
