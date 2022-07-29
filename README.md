@@ -16,11 +16,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-<!-- [<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
-
-[<img src="./Screenshot_hover.png" height="450px"/>](./Screenshot_hover.png)
-
-[<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png) -->
+[<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
 
 ### Links
 
@@ -32,9 +28,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Built with
 
 - Semantic HTML5 markup
-- Sass and CSS custom properties
-- Flexbox
 - [Google font](https://fonts.googleapis.com) - For fonts
+- [Tailwind CSS](https://tailwindcss.com/) - For CSS framework
 
 ## Author
 
