@@ -16,6 +16,7 @@ export default defineConfig({
       }
     }
   },
+  base: '/FrontendMentor/url-shortening-api-master/dist/',
   server: {
     open: true
   }
