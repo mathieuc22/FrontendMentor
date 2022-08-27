@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Insure landing page" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="static/style.css" />
+  <script type="module" src="static/main.js"></script>
+  
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="header-bar">
+      <a href="/" title="Go to home page">
+        <img src="./images/logo.svg" alt="Site logo" class="header__logo">
+      </a>
+      <!-- Navbar -->
+      <nav class="header-nav" aria-label="Primary">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a class="header-nav__link btn btn--header" href="#">How we work</a></li>
+          <li class="header-nav__item"><a class="header-nav__link btn btn--header" href="#">Blog</a></li>
+          <li class="header-nav__item"><a class="header-nav__link btn btn--header" href="#">Account</a></li>
+          <li class="header-nav__item"><a class="header-nav__link btn btn--dark" href="#">View plans</a></li>
+        </ul>
+      </nav>
+      <img src="./images/icon-hamburger.svg" alt="Navigation menu" class="mobile-nav-toggle">
+    </div>
+    <!-- Navbar mobile -->
+    <nav class="mobile-nav" aria-label="Primary">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">How we work</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Blog</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Account</a></li>
+        <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--plans" href="#">View plans</a></li>
+      </ul>
+      <img src="./images/bg-pattern-mobile-nav.svg" alt="Background pattern" class="mobile-nav__pattern">
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero Header -->
+    <section class="hero" aria-label="Hero Header">
+      <img src="./images/bg-pattern-intro-left-desktop.svg" alt="Background pattern" class="hero__pattern hero__pattern--left">
+      <img src="./images/bg-pattern-intro-right-desktop.svg" alt="Background pattern" class="hero__pattern hero__pattern--right">
+      <div class="hero__left">
+        <img src="./images/bg-pattern-intro-left-mobile.svg" alt="Background pattern" class="hero__pattern hero__pattern--mobile hero__pattern--left">
+        <img src="./images/bg-pattern-intro-right-mobile.svg" alt="Background pattern" class="hero__pattern hero__pattern--mobile hero__pattern--right">
+        <div class="hero__divider divider"></div>
+        <h1 class="hero__title">Humanizing your insurance.</h1>
+        <p class="hero__text">
+          Get your life insurance coverage easier and faster. We blend our expertise 
+          and technology to help you find the plan that’s right for you. Ensure you 
+          and your loved ones are protected.
+        </p>
+        <a href="#" class="hero__link btn">View plans</a>
+      </div>
+      <div class="hero__right">
+        <img src="./images/image-intro-desktop.jpg" alt="Insure illustration" class="hero__intro">
+        <img src="./images/image-intro-mobile.jpg" alt="Insure illustration" class="hero__intro hero__intro--mobile">
+      </div>
+    </section>
+
+    <!-- Different -->
+    <section class="different" aria-label="We're different">
+      <div class="different__divider divider divider--dark"></div>
+      <h1 class="different__title">We’re different</h1>
+      <ul class="different__list">
+        <li class="different-item">
+          <img src="./images/icon-snappy-process.svg" alt="Snappy process icon" class="different-item__icon">
+          <h2 class="different-item__title">Snappy Process</h2>
+          <p class="different-item__text">
+            Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.
+          </p>
+        </li>
+        <li class="different-item">
+          <img src="./images/icon-affordable-prices.svg" alt="Affordable prices icon" class="different-item__icon">
+          <h2 class="different-item__title">Affordable Prices</h2>
+          <p class="different-item__text">
+            We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.
+          </p>
+        </li>
+        <li class="different-item">
+          <img src="./images/icon-people-first.svg" alt="People first icon" class="different-item__icon">
+          <h2 class="different-item__title">People First</h2>
+          <p class="different-item__text">
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Find out more -->
+    <section class="findout" aria-label="Find out more">
+      <div class="findout__container">
+        <h1 class="findout__title">Find out more about how we work</h1>
+        <a href="#" class="findout__link btn">How we work</a>
+        <img src="./images/bg-pattern-how-we-work-desktop.svg" alt="Background pattern" class="findout__pattern">
+        <img src="./images/bg-pattern-how-we-work-mobile.svg" alt="Background pattern" class="findout__pattern findout__pattern--mobile">
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="./images/bg-pattern-footer-desktop.svg" alt="Background pattern" class="footer__pattern">
+    <img src="./images/bg-pattern-footer-mobile.svg" alt="Background pattern" class="footer__pattern footer__pattern--mobile">
+    <section class="footer__header" aria-label="Footer">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Site logo">
+      </div>
+      <div class="social">
+        <a href="#" class="social__link"><img src="./images/icon-facebook.svg" alt="facebook icon" class="social__icon"></a>
+        <a href="#" class="social__link"><img src="./images/icon-twitter.svg" alt="twitter icon" class="social__icon"></a>
+        <a href="#" class="social__link"><img src="./images/icon-pinterest.svg" alt="pinterest icon" class="social__icon"></a>
+        <a href="#" class="social__link"><img src="./images/icon-instagram.svg" alt="instagram icon" class="social__icon"></a>
+      </div>
+    </section>
+    <section class="footer__links" aria-label="Links">
+      <div class="link-card">
+        <h2 class="link-card__title">Our company</h2>
+        <ul class="link-card__list">
+          <li class="link-card__item"><a href="#" class="link-card__link">How we work</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Why Insure?</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">View plans</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="link-card">
+        <h2 class="link-card__title">Help me</h2>
+        <ul class="link-card__list">
+          <li class="link-card__item"><a href="#" class="link-card__link">FAQ</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Terms of use</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Privacy policy</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="link-card">
+        <h2 class="link-card__title">Contact</h2>
+        <ul class="link-card__list">
+          <li class="link-card__item"><a href="#" class="link-card__link">Sales</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Support</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Live chat</a></li>
+        </ul>
+      </div>
+      <div class="link-card">
+        <h2 class="link-card__title">Others</h2>
+        <ul class="link-card__list">
+          <li class="link-card__item"><a href="#" class="link-card__link">Careers</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Press</a></li>
+          <li class="link-card__item"><a href="#" class="link-card__link">Licenses</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </footer>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/mathieuc22">Nervous Buffalo</a>.
+  </div>
+</body>
+</html>
