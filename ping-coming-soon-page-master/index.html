@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/a76bab607b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/style.css" />
+  <script type="module" src="static/main.js"></script>
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <img src="./images/logo.svg" alt="PING. logo" class="header__logo">
+  </header>
+
+  <!-- Main -->
+  <main>
+
+    <!-- Launch welcome -->
+    <section class="launch">
+      <h1 class="launch__title">
+        We are launching <span class="launch__bold">soon!</span>
+      </h1>
+    </section>
+
+    <!-- Subscription form -->
+    <section class="subscribe">
+      <h2 class="subscribe__title">
+        Subscribe and get notified
+      </h2>
+      <form action="" class="subscribe__form" novalidate>
+        <div class="subscribe__input-group">
+          <input type="email" class="subscribe__input" name="email" id="email" placeholder="Your email address...">
+          <span class="error__message" aria-live="polite"></span>
+        </div>
+        <input type="submit" class="subscribe__input subscribe__input--submit" value="Notify Me">
+      </form>
+    </section>
+
+    <!-- Dashboard illustration -->
+    <section class="dashboard">
+      <img src="./images/illustration-dashboard.png" alt="Dashboard illustration" class="dashboard__illustration">
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <!-- Social icons -->
+    <section class="social">
+      <div class="social__icon">
+        <i class="fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="social__icon">
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <div class="social__icon">
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </section>
+
+    <!-- Copyright section -->
+    <section class="copyright">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </section>
+    
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/mathieuc22">Nervous Buffalo</a>.
+  </div>
+</body>
+</html>

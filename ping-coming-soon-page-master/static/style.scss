@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+// Variables
+
+// Colors
+$color-primary-Blue: hsl(223, 87%, 63%);
+$color-secondary-PaleBlue: hsl(223, 100%, 88%);
+$color-secondary-LightRed: hsl(354, 100%, 66%);
+$color-neutral-Gray: hsl(0, 0%, 59%);
+$color-neutral-VeryDarkBlue: hsl(209, 33%, 12%);
+$color-mainBG: #fff;
+// Typography
+$font-size-default: 20px;
+$font-weight-default: 300;
+$font-family-default: "Libre Franklin", sans-serif;
+
+// Base
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  text-align: center;
+  color: $color-neutral-VeryDarkBlue;
+  background-color: $color-mainBG;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+// Components
+
+.header {
+  margin-bottom: 1.75rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 1.4rem;
+  }
+  &__logo {
+    width: 2.7rem;
+    margin-top: 86px;
+    @media screen and (min-width: 768px) {
+      width: 2.9rem;
+      margin-bottom: unset;
+    }
+  }
+}
+
+.launch {
+  margin-bottom: 0.9rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0.65rem;
+  }
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: $color-neutral-Gray;
+    @media screen and (min-width: 768px) {
+      font-size: 48.5px;
+    }
+  }
+  &__bold {
+    font-weight: 700;
+    color: initial;
+  }
+}
+
+.subscribe {
+  margin-bottom: 3.1rem;
+  font-size: 0.6rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2.8rem;
+  }
+  &__title {
+    margin-bottom: 1.35rem;
+    font-weight: 300;
+    font-size: inherit;
+  }
+  &__form {
+    margin: auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px) {
+      width: unset;
+      flex-direction: unset;
+      justify-content: space-between;
+    }
+    & > * {
+      @media screen and (min-width: 768px) {
+        margin: 0 7px;
+      }
+    }
+  }
+  &__input-group {
+    position: relative;
+    flex: 2;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.6rem 1.5rem;
+    font-size: inherit;
+    @media screen and (min-width: 768px) {
+      padding: 0.6rem 1rem;
+      font-size: 16px;
+    }
+    border-radius: 1rem;
+    border: 1px solid $color-secondary-PaleBlue;
+    &::placeholder {
+      color: $color-secondary-PaleBlue;
+    }
+    &:focus {
+      outline: none;
+    }
+    &--submit {
+      flex: 1;
+      border: 1px solid $color-primary-Blue;
+      color: $color-mainBG;
+      background-color: $color-primary-Blue;
+      font-weight: 700;
+      box-shadow: 0px 4px 8px 3px lighten($color: $color-primary-Blue, $amount: 30%);
+      transition: all 0.2s ease-in-out;
+      @media screen and (min-width: 768px) {
+        max-width: 200px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: lighten($color: $color-primary-Blue, $amount: 10%);
+        border-color: lighten($color: $color-primary-Blue, $amount: 10%);
+      }
+      &:active {
+        transform: translateY(5px);
+      }
+    }
+  }
+}
+
+.error {
+  border: 1px solid red;
+  &__message {
+    color: red;
+    font-style: italic;
+    margin-top: 0.25rem;
+    margin-bottom: 0.7rem;
+    display: block;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      text-align: left;
+      bottom: -77%;
+      left: 1rem;
+      font-size: 12.2px;
+    }
+  }
+}
+
+.dashboard {
+  margin-bottom: 5.6rem;
+  max-width: 745px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 2.2rem;
+  }
+  &__illustration {
+    width: 86%;
+  }
+}
+
+// .footer {
+//   position: fixed;
+//   bottom: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+.social {
+  display: flex;
+  justify-content: center;
+  color: $color-primary-Blue;
+  gap: 0.25rem;
+  margin-bottom: 1.45rem;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0.9rem;
+  }
+  &__icon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid $color-secondary-PaleBlue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: $color-primary-Blue;
+      border-color: $color-primary-Blue;
+      color: $color-mainBG;
+    }
+    & > * {
+      font-size: 15px;
+    }
+  }
+}
+
+.copyright {
+  color: $color-neutral-Gray;
+  font-size: 0.5rem;
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+}
