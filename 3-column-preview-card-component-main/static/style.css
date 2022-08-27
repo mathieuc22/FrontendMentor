@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: auto;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: #f2f2f2;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: unset;
+    padding: 88px 0;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-top: 21.25vh;
+  width: 921px;
+  height: 500px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 87%;
+    height: unset;
+  }
+}
+
+.column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    height: 442px;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+}
+
+.column__title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 2.6em;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+}
+
+.column__text {
+  line-height: 1.7em;
+  padding-bottom: 46px;
+}
+
+@media screen and (max-width: 768px) {
+  .column__text {
+    padding-bottom: unset;
+  }
+}
+
+.column--sedans {
+  background-color: #e38826;
+}
+
+.column--suvs {
+  background-color: #006970;
+}
+
+.column--luxury {
+  background-color: #004241;
+}
+
+.button {
+  position: relative;
+  padding: 14.5px 31.6px;
+  border: none;
+  font-size: 1em;
+  background: none;
+  outline: none;
+  color: black;
+  border-radius: 30px;
+  mix-blend-mode: screen;
+  cursor: pointer;
+}
+
+.button::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #f2f2f2;
+  border-radius: 30px;
+  content: '';
+  mix-blend-mode: color-burn;
+}
+
+.button:hover {
+  padding: 12.5px 29.6px;
+  background: black;
+  color: unset;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.button:hover::before {
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+/*# sourceMappingURL=style.css.map */
