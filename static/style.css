@@ -18,6 +18,12 @@
 - White: hsl(0, 0%, 100%)
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --Softred: hsl(7, 99%, 70%);
   --Yellow: hsl(51, 100%, 49%);
@@ -34,7 +40,6 @@
 
 html, body {
   height: 100%;
-  margin: auto;
   padding: 0;
   font-family: 'Barlow', sans-serif;
   display: flex;
@@ -69,25 +74,22 @@ ul {
 
 .header__navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-
-.header__logo {
-  margin: 45px 0 0 40px;
-  width: 170px;
+  padding: 16px 40px;
 }
 
 .header__logo img {
-  width: 100%;
+  width: 170px;
 }
 
 .header__links {
   display: flex;
+  align-items: center;
+  gap: 47px;
 }
 
 .header__link {
-  margin: 25px;
-  margin-top: 30px;
   cursor: pointer;
   user-select: none;
 }
@@ -97,10 +99,10 @@ ul {
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
   background-color: var(--White);
-  padding: 20px 30px;
-  margin-top: 12px;
+  padding: 18.5px 31px;
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 15.2px;
+  margin-right: 8px;
 }
 
 .header__link--contact:hover {
@@ -121,9 +123,9 @@ ul {
 
 .header__arrow {
   position: absolute;
-  /* top: calc(50% - 57px); */
-  left: calc(50% - 13px);
-  margin-top: -31vw;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-50%);
 }
 
 /* section: Presentations */
