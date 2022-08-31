@@ -88,6 +88,8 @@ ul {
 .header__link {
   margin: 25px;
   margin-top: 30px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .header__link--contact {
@@ -99,6 +101,11 @@ ul {
   margin-top: 12px;
   border-radius: 50px;
   font-size: 16px;
+}
+
+.header__link--contact:hover {
+  color: var(--White);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .header__title {
@@ -149,6 +156,29 @@ ul {
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
   font-size: 16px;
+  user-select: none;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.presentations__more:hover:after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  bottom: -3px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  width: 113%;
+  border-radius: 5px;
+  background: var(--Yellow);
+  z-index: -1;
+}
+
+.presentations__more--red:hover:after {
+  background: var(--Softred);
 }
 
 .presentations__title {
@@ -290,6 +320,11 @@ ul {
   padding: 0 15px;
   text-align: end;
   width: 95px;
+  cursor: pointer;
+}
+
+.footer__link:hover {
+  color: var(--White);
 }
 
 .footer__social {
@@ -300,4 +335,10 @@ ul {
 
 .footer_social-item {
   margin: 0 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.footer_social-item:hover path {
+  fill: var(--White);
 }
