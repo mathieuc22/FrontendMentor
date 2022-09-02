@@ -478,12 +478,56 @@ ul {
   }
 
   .header__links {
+    opacity: 0;
     display: none;
+    background-color: var(--White);
+    color: var(--Darkgrayishblue);
+    position: absolute;
+    top: 105px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px 84px;
+    width: calc(100% - 48px);
+    flex-direction: column;
+    gap: 33px;
+    font-size: 1.1em;
+    z-index: 99;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .header__links:before {
+    position: absolute;
+    content: "";
+    top: -24px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 24px 24px;
+    border-color: transparent transparent #ffffff transparent;
+  }
+
+  .display {
+    opacity: 1;
+    display: flex;
+  }
+
+  .header__link--contact {
+    background-color: var(--Yellow);
+  }
+
+  .header__link--contact:hover {
+    color: black;
+    background-color: var(--Softred);
   }
 
   .header___hamburger {
     display: block;
     cursor: pointer;
+  }
+
+  .header___hamburger:hover {
+    opacity: 0.7;
   }
 
   .header__title {
