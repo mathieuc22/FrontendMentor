@@ -29,7 +29,7 @@
   --Yellow: hsl(51, 100%, 49%);
   --Darkdesaturatedcyan: hsl(167, 40%, 24%); /* (graphic design text) */
   --Darkblue: hsl(198, 62%, 26%); /* (photography text) */
-  --Darkmoderatecyan : hsl(168, 34%, 41%); /* (footer) */
+  --Darkmoderatecyan: hsl(168, 34%, 41%); /* (footer) */
 
   --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
   --Verydarkgrayishblue: hsl(213, 9%, 39%);
@@ -38,10 +38,11 @@
   --White: hsl(0, 0%, 100%);
 }
 
-html, body {
+html,
+body {
   height: 100%;
   padding: 0;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
   color: var(--Verydarkdesaturatedblue);
   background-color: #fffbf8;
@@ -104,16 +105,14 @@ ul {
 
 .header__link--contact {
   color: black;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   text-transform: uppercase;
   background-color: var(--White);
   padding: 18.5px 31px;
   border-radius: 50px;
   font-size: 15.2px;
   margin-right: 8px;
-  transition: 
-    color 0.3s ease-in-out,
-    background-color 0.25s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.25s ease-in-out;
 }
 
 .header__link--contact:hover {
@@ -126,7 +125,7 @@ ul {
   white-space: nowrap;
   margin: 0 auto;
   margin-top: 5%;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   color: var(--White);
   font-size: 3.8vw;
   font-weight: 900;
@@ -139,8 +138,12 @@ ul {
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes appear {
@@ -178,7 +181,7 @@ ul {
   }
 }
 
-.header__arrow img{
+.header__arrow img {
   padding: 0 100px;
 }
 
@@ -238,7 +241,7 @@ ul {
 
 .presentations__more {
   padding: 8px;
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   text-transform: uppercase;
   font-size: 16.8px;
   user-select: none;
@@ -250,7 +253,7 @@ ul {
 
 .presentations__more:after {
   position: absolute;
-  content: '';
+  content: "";
   height: 10px;
   bottom: 6px;
   margin: 0 auto;
@@ -274,7 +277,7 @@ ul {
 }
 
 .presentations__title {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 40px;
 }
@@ -310,7 +313,7 @@ ul {
 }
 
 .services__title {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-size: 28px;
   font-weight: 900;
   margin: 29px;
@@ -329,7 +332,7 @@ ul {
 }
 
 .testimonials__title {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   text-transform: uppercase;
   text-align: center;
   color: var(--Grayishblue);
@@ -364,7 +367,7 @@ ul {
 }
 
 .testimonials__avatar-name {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   font-weight: 900;
   padding: 10px 0;
 }
@@ -387,7 +390,7 @@ ul {
 /* sections: Footer */
 
 .footer {
-  background-color: hsl(166.8,	44.16%,	69.8%);
+  background-color: hsl(166.8, 44.16%, 69.8%);
   color: var(--Darkmoderatecyan);
   text-align: center;
   display: flex;
@@ -402,7 +405,7 @@ ul {
 .footer__logo {
   width: 182px;
   height: 34px;
-  background-color: hsl(166,	45%,	32%);
+  background-color: hsl(166, 45%, 32%);
   -webkit-mask: url(../images/logo.svg) center/171px no-repeat;
   mask: url(../images/logo.svg) center/171px no-repeat;
 }
@@ -442,14 +445,12 @@ ul {
   fill: var(--White);
 }
 
-
 /* If the screen size is 400px wide or less, set the font-size to 16px */
 @media screen and (max-width: 540px) {
-
   .image--desktop {
     display: none;
   }
-  
+
   .image--mobile {
     display: block;
   }
@@ -466,7 +467,6 @@ ul {
     flex-direction: column;
   }
 
-
   .presentations__article > * {
     width: 100%;
   }
@@ -475,7 +475,6 @@ ul {
     padding: unset;
     text-align: center;
   }
-  
 
   .presentations__more {
     align-self: center;
@@ -501,5 +500,4 @@ ul {
   .illustrations > * {
     width: 50%;
   }
-
 }
