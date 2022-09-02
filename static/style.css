@@ -206,51 +206,64 @@ ul {
 }
 
 .presentations__content {
-  margin: auto;
+  color: var(--Verydarkdesaturatedblue);
+  padding: 110px;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.presentations__content--right {
+  justify-content: flex-start;
+}
+
+.presentations__wrapper {
   max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
 }
 
 .presentations__text {
   color: var(--Darkgrayishblue);
   line-height: 30px;
-  margin: 35px 0;
 }
 
 .presentations__more {
+  padding: 8px;
   font-family: 'Fraunces', serif;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 16.8px;
   user-select: none;
   position: relative;
   width: fit-content;
   cursor: pointer;
-  transition: 
-    all 0.3s ease-in-out,
+  align-self: flex-start;
 }
 
-.presentations__more:hover:after {
+.presentations__more:after {
   position: absolute;
   content: '';
   height: 10px;
-  bottom: -3px;
+  bottom: 6px;
   margin: 0 auto;
   left: 50%;
   transform: translateX(-50%);
   right: 0;
-  width: 113%;
+  width: 100%;
   border-radius: 5px;
   background: var(--Yellow);
   z-index: -1;
-  animation: fadeIn 0.25s ease-in-out;
+  opacity: 0.2;
+  transition: opacity 0.25s ease-in-out;
 }
 
-.presentations__more--red:hover:after {
+.presentations__more--red:after {
   background: var(--Softred);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1 }
+.presentations__more:hover:after {
+  opacity: 1;
 }
 
 .presentations__title {
