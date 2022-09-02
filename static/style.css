@@ -46,6 +46,8 @@ body {
   font-size: 18px;
   color: var(--Verydarkdesaturatedblue);
   background-color: #fffbf8;
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -63,6 +65,7 @@ ul {
 /* section: Header */
 
 .header {
+  scroll-snap-align: start;
   position: relative;
   color: var(--White);
   text-align: center;
@@ -88,7 +91,6 @@ ul {
 }
 
 .header__logo img {
-  display: block;
   width: 170px;
 }
 
@@ -120,6 +122,10 @@ ul {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.header___hamburger {
+  display: none;
+}
+
 .header__title {
   overflow: hidden;
   white-space: nowrap;
@@ -127,7 +133,7 @@ ul {
   margin-top: 5%;
   font-family: "Fraunces", serif;
   color: var(--White);
-  font-size: 3.8vw;
+  font-size: 3.05em;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -162,7 +168,7 @@ ul {
   position: absolute;
   left: 50%;
   /* top: -15%; */
-  transform: translateX(-50%);
+  transform: translateX(-50%) scale(0);
   animation: slideDown 1.5s ease-in-out 1.5s 1 forwards;
 }
 
@@ -209,6 +215,7 @@ ul {
 }
 
 .presentations__article {
+  scroll-snap-align: start;
   display: flex;
 }
 
@@ -240,6 +247,8 @@ ul {
 }
 
 .presentations__more {
+  position: relative;
+  z-index: 1;
   padding: 8px;
   font-family: "Fraunces", serif;
   text-transform: uppercase;
@@ -285,6 +294,7 @@ ul {
 /* section: Services */
 
 .services {
+  scroll-snap-align: start;
   display: flex;
 }
 
@@ -328,6 +338,7 @@ ul {
 /* sections: testimonials*/
 
 .testimonials {
+  scroll-snap-align: center;
   padding: 163px 0;
 }
 
@@ -380,6 +391,7 @@ ul {
 /* sections: Illustrations */
 
 .illustrations {
+  scroll-snap-align: start;
   display: flex;
 }
 
@@ -390,6 +402,7 @@ ul {
 /* sections: Footer */
 
 .footer {
+  scroll-snap-align: start;
   background-color: hsl(166.8, 44.16%, 69.8%);
   color: var(--Darkmoderatecyan);
   text-align: center;
@@ -446,7 +459,7 @@ ul {
 }
 
 /* If the screen size is 400px wide or less, set the font-size to 16px */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 800px) {
   .image--desktop {
     display: none;
   }
@@ -455,10 +468,54 @@ ul {
     display: block;
   }
 
+  .header__navbar {
+    justify-content: space-between;
+    padding: 33px 24px;
+  }
+
+  .header__logo img {
+    width: 124px;
+  }
+
   .header__links {
     display: none;
   }
 
+  .header___hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__title {
+    overflow: hidden;
+    white-space: unset;
+    margin-top: 15%;
+    font-size: 2.1em;
+    animation: unset;
+  }
+
+  .header__arrow {
+    position: absolute;
+    left: 50%;
+    /* top: -15%; */
+    transform: translateX(-50%) scale(0);
+    animation: slideDown 1.5s ease-in-out 0s 1 forwards;
+  }
+
+  @keyframes slideDown {
+    0% {
+      top: 27%;
+      transform: translateX(-50%) scale(0);
+    }
+    80% {
+      top: 56%;
+      transform: translateX(-50%) scale(1);
+    }
+    100% {
+      top: 54%;
+      transform: translateX(-50%) scale(1);
+    }
+  }
   .presentations__article {
     flex-direction: column-reverse;
   }
@@ -474,6 +531,15 @@ ul {
   .presentations__content {
     padding: unset;
     text-align: center;
+    padding: 64px 24px;
+  }
+
+  .presentations__wrapper {
+    gap: 23px;
+  }
+
+  .presentations__title {
+    font-size: 1.78em;
   }
 
   .presentations__more {
@@ -488,9 +554,24 @@ ul {
     width: 100%;
   }
 
+  .testimonials {
+    padding: 61px 24px;
+  }
+
+  .testimonials__title {
+    font-size: 16.5px;
+    letter-spacing: 3.8px;
+    margin-bottom: 65px;
+  }
+
+  .testimonials__text {
+    margin: 30px 0;
+  }
+
   .testimonials__articles {
     flex-direction: column;
     align-items: center;
+    gap: 65px;
   }
 
   .illustrations {
