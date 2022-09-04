@@ -3,26 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pink: {
+              DEFAULT: 'hsl(322, 100%, 66%)',
+              light: 'hsl(321, 100%, 78%)',
+            },
+            'very-dark-cyan': 'hsl(192, 100%, 9%)',
+            'very-pale-blue': 'hsl(207, 100%, 98%)',
+          }
+        }
+      }
+    }
+  </script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Try it free
 
-  Build The Community Your Fans Will Love
+  <header class="flex justify-between items-center p-6">
+    <img class="w-24 h-4" src="images/logo.svg" alt="logo">
+    <div class="text-pink text-xs border border-pink rounded-full py-1 px-5 " >Try it free</div>
+  </header>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
+  <main>
+    <section class="p-8 text-center">
+      <h1 class="font-semibold text-2xl text-very-dark-cyan">
+      Build The Community Your Fans Will Love
+      </h1>
+      <p class="text-sm text-very-dark-cyan">
+        Huddle re-imagines the way we build communities. You have a voice, but so does 
+        your audience. Create connections with your users as you engage in genuine discussion. 
+      </p>
+    
+      Get Started For Free
+    </section>
 
-  Get Started For Free
+  </main>
 
   1.4k+
   Communities Formed
@@ -58,10 +81,6 @@
   Subscribe
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
   </footer>
 </body>
 </html>
