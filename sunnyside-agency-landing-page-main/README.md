@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/sunnyside-agency-landing-page-main)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/sunnyside-agency-landing-page-main/)
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/tree/main/sunnyside-agency-landing-page-main)
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/FrontendMentor/sunnyside-agency-landing-page-main/)
 
 ## My process
 
