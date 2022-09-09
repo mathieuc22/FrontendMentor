@@ -22,9 +22,9 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 
 ### Links
-huddle-landing-page-with-curved-sections-master
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/huddle-landing-page-with-curved-sections-master)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/huddle-landing-page-with-curved-sections-master/)
+
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/tree/main/huddle-landing-page-with-curved-sections-master)
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/FrontendMentor/huddle-landing-page-with-curved-sections-master/)
 
 ## My process
 
