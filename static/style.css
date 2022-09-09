@@ -431,6 +431,7 @@ ul {
 
 .footer__link {
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
 }
 
 .footer__link:hover {
@@ -508,8 +509,35 @@ ul {
   }
 
   .display {
-    opacity: 1;
     display: flex;
+    opacity: 1;
+  }
+
+  .fadein {
+    animation: In 0.4s ease-in-out;
+  }
+
+  @keyframes In {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .fadeout {
+    display: flex;
+    animation: Out 0.4s ease-in-out;
+  }
+
+  @keyframes Out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
 
   .header__link--contact {
