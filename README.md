@@ -19,3 +19,4 @@
 - stats-preview-card-component-main
 - sunnyside-agency-landing-page-main
 - url-shortening-api-master
+- huddle-landing-page-with-curved-sections-master
