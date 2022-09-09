@@ -167,8 +167,11 @@
           To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
           send you spam or pass on your email address
         </p>
-        <form class="md:flex md:gap-2 md:justify-between md:flex-wrap" action="">
-          <input class="p-3 rounded-md w-full mb-4 md:mb-0 text-very-dark-cyan md:w-80" type="text">
+        <form class="relative md:flex md:gap-2 md:justify-between md:flex-wrap" action="">
+          <input type="email" name="email"  class="peer py-2 px-4 text-sm rounded-md w-full mb-4 md:mb-0 text-very-dark-cyan md:w-80 border focus:outline-none invalid:border-red-400">
+          <p class="invisible peer-invalid:visible absolute -bottom-6 text-red-400 text-xs font-light">
+            Check your email please
+          </p>
           <button class="block ml-auto md:ml-0 mr-0 py-3 px-10 bg-pink hover:bg-pink-light rounded-md text-base md:text-base text-white font-bold">Subscribe</button>
         </form>
       </div>
