@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+// Variables
+
+// Colors
+$color-Very-Dark-Gray: hsl(0, 0%, 17%);
+$color-Dark-Gray: hsl(0, 0%, 59%);
+$color-main-bg: #fff;
+
+// Typography
+$font-size-default: 18px;
+$font-weight-default: 400;
+$font-family-default: "Rubik", sans-serif;
+
+$mq-max-width: 768px;
+
+// Base
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  background: $color-main-bg;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+// Components
+
+main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.tracker {
+  z-index: 20;
+  position: relative;
+  width: 100%;
+  height: 35%;
+  min-height: 240px;
+  max-height: 280px;
+  background: url(images/pattern-bg.png) no-repeat left center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.15));
+
+  @media screen and (max-width: $mq-max-width) {
+    background-size: cover;
+    font-size: 14px;
+    height: 300px;
+    min-height: unset;
+    max-height: unset;
+  }
+}
+
+#map {
+  z-index: 10;
+  flex: auto;
+}
+
+.spinner {
+  color: $color-main-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & i {
+    font-size: 15px;
+  }
+}
+
+.title {
+  color: $color-main-bg;
+  margin: 30px;
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+.ip-form {
+  position: relative;
+  width: 38.54%;
+  display: flex;
+  height: 58px;
+  border-radius: 17px;
+  overflow: hidden;
+
+  @media screen and (max-width: $mq-max-width) {
+    width: 90%;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 23px;
+    font-size: 18px;
+    border: none;
+
+    &:focus {
+      outline: none;
+      font-family: $font-family-default;
+      font-size: $font-size-default;
+    }
+  }
+
+  &__button {
+    background-color: black;
+    border: none;
+    width: 58px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($color: $color-Very-Dark-Gray, $amount: 10);
+    }
+  }
+}
+
+.disabled {
+  cursor: default;
+  background-color: lighten($color: $color-Very-Dark-Gray, $amount: 10);
+}
+
+.error {
+  border: 1px solid red;
+
+  & span {
+    border: none;
+    font-size: 0.7em;
+    color: red;
+    position: absolute;
+    bottom: 3px;
+    left: 23px;
+  }
+}
+
+.info-table {
+  background-color: $color-main-bg;
+  height: 160px;
+  width: 77%;
+  min-width: 900px;
+  max-width: 1200px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  padding: 30px;
+  display: flex;
+
+  @media screen and (max-width: $mq-max-width) {
+    height: 295px;
+    flex-direction: column;
+    width: 90%;
+    min-width: unset;
+    gap: unset;
+    align-items: center;
+    text-align: center;
+    bottom: -20px;
+  }
+
+  & .spinner {
+    flex: 1;
+    color: $color-Very-Dark-Gray;
+    & i {
+      font-size: 30px;
+    }
+  }
+
+  & ul {
+    flex: 1;
+    display: flex;
+    gap: 2%;
+    list-style: none;
+
+    @media screen and (max-width: $mq-max-width) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      bottom: -20px;
+    }
+  }
+}
+
+.info-card {
+  position: relative;
+  flex: 1;
+
+  &--border:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 90%;
+    border-right: 1.5px solid lighten($color: $color-Dark-Gray, $amount: 30);
+  }
+
+  @media screen and (max-width: $mq-max-width) {
+    content: "";
+    position: unset;
+    border-right: unset;
+  }
+
+  &__title {
+    color: $color-Dark-Gray;
+    font-size: 0.72em;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: $mq-max-width) {
+      text-align: unset;
+    }
+  }
+
+  &__data {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+}
