@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+// Variables
+
+// Colors
+
+// Primary
+$color-primary-Desaturated-Dark-Cyan: hsl(180, 29%, 50%);
+
+// Neutral
+$color-neutral-Light-Grayish-Cyan: hsl(180, 52%, 96%); //Background
+$color-neutral-Light-Grayish-Cyan-filter: hsl(180, 31%, 95%); //Filter Tablets
+$color-neutral-Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+$color-neutral-Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+$color-neutral-White: hsl(0, 0%, 100%);
+$color-neutral-Black: hsl(0, 0%, 0%);
+
+// Typography
+$font-size-default: 15px;
+$font-weight-default: 500;
+$font-family-default: "League Spartan", sans-serif;
+
+$mq-max-width: 1024px;
+
+// Base
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  color: $color-neutral-Black;
+  background: $color-neutral-Light-Grayish-Cyan;
+  font-family: $font-family-default;
+  font-size: $font-size-default;
+  font-weight: $font-weight-default;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  @media screen and (max-width: $mq-max-width) {
+    font-size: 12px;
+  }
+}
+
+// components
