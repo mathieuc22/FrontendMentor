@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/article-preview-component-master)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/article-preview-component-master/)
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/tree/main/article-preview-component-master)
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/FrontendMentor/article-preview-component-master/)
 
 ## My process
 

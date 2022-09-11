@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/base-apparel-coming-soon-master)
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/tree/main/base-apparel-coming-soon-master)
 - Live Site URL: [GitHub Pages](https://mathieuc22.github.io/base-apparel-coming-soon-master/)
 
 ## My process

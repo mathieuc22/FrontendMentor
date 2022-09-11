@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/advice-generator-app-main)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/advice-generator-app-main/)
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/tree/main/advice-generator-app-main)
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/FrontendMentor/advice-generator-app-main/)
 
 ## My process
 

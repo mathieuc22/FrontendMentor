@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/3-column-preview-card-component-main)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/3-column-preview-card-component-main/)
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/tree/main/3-column-preview-card-component-main)
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/FrontendMentor/3-column-preview-card-component-main/)
 
 ## My process
 
