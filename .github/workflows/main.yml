@@ -14,6 +14,12 @@ jobs:
           npm run build
         working-directory: ecommerce-product-page-main
 
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm ci
+          npm run build
+        working-directory: static-job-listings-master
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -23,3 +29,6 @@ jobs:
 
       - name: Deploy static site to S3 bucket
         run: aws s3 sync ./ecommerce-product-page-main/dist/ s3://ecommerce-product-page --delete
+
+      - name: Deploy static site to S3 bucket
+        run: aws s3 sync ./static-job-listings-master/dist/ s3://static-job-listings --delete
