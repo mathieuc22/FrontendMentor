@@ -26,8 +26,20 @@ let results = ref([]);
 async function fetchAPI() {
     let fetchURL = new URL("https://api.shrtco.de/v2/shorten")
     fetchURL.searchParams.set('url', url.value);
-    const short = await fetch(fetchURL.href).then((r) => r.json())
-    results.value.push(short.result)
+    fetch(fetchURL.href).then((response) => {
+        if (response.ok) {
+            return response.json();
+        }
+        throw new Error('Something went wrong');
+        })
+        .then((data) => {
+            results.value.push(data.result);
+            url.value = ""
+        })
+        .catch(error => {
+            console.log(error)
+        });
+    
 }
 
 </script>
