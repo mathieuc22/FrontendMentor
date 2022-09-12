@@ -1,6 +1,8 @@
 # FrontendMentor
 
-## List of projects
+Here is the list of all my completed Frontend Mentor challenges. You can find links to their repositories and live demos.
+
+## My challenges
 
 - [**NFT preview card component**](https://github.com/mathieuc22/FrontendMentor/tree/main/nft-preview-card-component) | **HTML CSS** | newbie | [Live](https://mathieuc22.github.io/FrontendMentor/nft-preview-card-component/)
 - [**QR code component**](https://github.com/mathieuc22/FrontendMentor/tree/main/qr-code-component-main) | **HTML CSS** | newbie | [Live](https://mathieuc22.github.io/FrontendMentor/qr-code-component-main/)
