@@ -12,12 +12,7 @@ jobs:
         run: |
           npm ci
           npm run build
-
-      # - name: Deploy 🚀
-      #   uses: JamesIves/github-pages-deploy-action@v4.3.0
-      #   with:
-      #     branch: gh-pages # The branch the action should deploy to.
-      #     folder: dist # The folder the action should deploy.
+        working-directory: ecommerce-product-page-main
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -27,4 +22,4 @@ jobs:
           aws-region: eu-west-3
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./dist/ s3://ecommerce-product-page --delete
+        run: aws s3 sync ./ecommerce-product-page-main/dist/ s3://ecommerce-product-page --delete
