@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+// Variables
+
+// Colors
+
+// Primary
+$color-primary-Orange: #ff7d1a;
+$color-primary-Pale-orange: hsl(25, 100%, 94%);
+
+// Neutral
+$color-neutral-Very-dark-blue: hsl(220, 13%, 13%);
+$color-neutral-Dark-grayish-blue: hsl(219, 9%, 45%);
+$color-neutral-Grayish-blue: hsl(220, 14%, 75%);
+$color-neutral-Light-grayish-blue: hsl(223, 64%, 98%);
+$color-neutral-White: hsl(0, 0%, 100%);
+$color-neutral-Black: hsl(0, 0%, 0%); //(with 75% opacity for lightbox background)
+
+// Typography
+$font-size-default: 16px;
+$font-weight-default: 400;
+$font-family-default: "Kumbh Sans", sans-serif;
+
+$mq-max-width: 1024px;
+
+// Base
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  color: $color-neutral-Black;
+  background: $color-neutral-White;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+// components
+
+// .row {
+//   max-width: 1110px;
+//   margin: auto;
+//   margin: 0 11.45%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 20px;
+// }
+
+// .col {
+//   flex: 1;
+//   padding: 47px 47px 0 47px;
+//   & img {
+//     max-width: 100%;
+//   }
+// }
+
+.button {
+  width: 100%;
+  height: 56px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.98em;
+  font-weight: 700;
+  background-color: $color-primary-Orange;
+  color: $color-neutral-White;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 9px 39px;
+  transition: all 0.2s ease-in-out;
+
+  &--box-shadow {
+    box-shadow: 0px 15px 30px 0px rgba(255, 125, 26, 0.3);
+  }
+
+  & svg path {
+    fill: $color-neutral-White;
+  }
+
+  &:hover {
+    background-color: lighten($color: $color-primary-Orange, $amount: 20);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
