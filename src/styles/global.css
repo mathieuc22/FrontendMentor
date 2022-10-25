@@ -98,7 +98,7 @@ img {
   margin-bottom: 1.1rem;
 }
 
-@media screen and (min-width: 636px) {
+@media screen and (min-width: 1024px) {
   body {
     padding: 5.9rem 11rem;
   }
