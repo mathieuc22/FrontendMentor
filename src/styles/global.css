@@ -19,7 +19,8 @@
   --heading-color-alt: hsl(35, 77%, 62%);
   --text-color: hsl(236, 13%, 42%);
   --link-color: hsl(236, 13%, 42%);
-  --hover-color: hsl(35, 77%, 62%);
+  --hover-color: hsl(5, 85%, 63%);
+  --hover-color-alt: hsl(35, 77%, 62%);
   --accent-color: hsl(5, 85%, 63%);
   --list-color: hsl(233, 8%, 79%);
 }
@@ -32,6 +33,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: var(--font-scale);
 }
 
 /* Components */
@@ -40,7 +42,7 @@ body {
   font-family: var(--font-secondary);
   font-size: var(--font-scale);
   margin: auto;
-  padding: 20px;
+  padding: 16px;
   max-width: var(--width);
   text-align: left;
   background-color: var(--background-color);
@@ -90,4 +92,10 @@ img {
 
 .title h1 {
   font-size: 1.5em;
+}
+
+@media screen and (min-width: 636px) {
+  body {
+    padding: 5.9rem 11rem;
+  }
 }

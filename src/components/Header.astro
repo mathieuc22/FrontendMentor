@@ -1,0 +1,65 @@
+---
+import hamburger from "../assets/images/icon-menu.svg";
+---
+
+<header>
+  <div class="logo">
+    <img src="/logo.svg" alt="Logo" />
+  </div>
+  <nav>
+    <div class="hamburger">
+      <img src={hamburger} alt="Hamburger menu" />
+    </div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/">New</a>
+      <a href="/">Popular</a>
+      <a href="/">Trending</a>
+      <a href="/">Categories</a>
+    </div>
+  </nav>
+</header>
+
+<style>
+  header {
+    margin: 0em 0 2em;
+    display: flex;
+    place-items: center;
+    place-content: space-between;
+  }
+
+  .logo {
+    width: 46px;
+  }
+
+  .hamburger {
+    cursor: pointer;
+  }
+
+  nav a {
+    font-size: 1.075rem;
+    margin-left: 2.245rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  @media screen and (min-width: 636px) {
+    .logo {
+      width: unset;
+    }
+
+    .nav-links {
+      display: block;
+    }
+
+    .nav-links a {
+      display: inline-block;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+</style>
