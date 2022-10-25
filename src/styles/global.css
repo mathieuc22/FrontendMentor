@@ -48,7 +48,7 @@ body {
   background-color: var(--background-color);
   word-wrap: break-word;
   overflow-wrap: break-word;
-  line-height: 1.5;
+  line-height: 1.72;
   color: var(--text-color);
 }
 
@@ -91,11 +91,20 @@ img {
 }
 
 .title h1 {
-  font-size: 1.5em;
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 2.7rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.1rem;
 }
 
 @media screen and (min-width: 636px) {
   body {
     padding: 5.9rem 11rem;
+  }
+
+  .title h1 {
+    font-size: 4rem;
+    line-height: 4rem;
   }
 }

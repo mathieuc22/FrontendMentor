@@ -1,0 +1,57 @@
+---
+import HeroImage from "../assets/images/image-web-3-mobile.jpg";
+import HeroImageDesktop from "../assets/images/image-web-3-desktop.jpg";
+import Button from "./Button.astro";
+---
+
+<article>
+  <div class="illustration">
+    <img class="mobile" src={HeroImage} alt="Article illustration" />
+    <img class="desktop" src={HeroImageDesktop} alt="Article illustration" />
+  </div>
+  <div class="content">
+    <div class="column title">
+      <h1>The Bright Future of Web 3.0?</h1>
+    </div>
+    <div class="column">
+      <p>
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+      </p>
+      <Button>Read more</Button>
+    </div>
+  </div>
+</article>
+
+<style scoped>
+  .desktop {
+    display: none;
+  }
+
+  @media screen and (min-width: 636px) {
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+    article {
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      display: flex;
+    }
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    p {
+      margin-top: 1.25rem;
+    }
+  }
+</style>
