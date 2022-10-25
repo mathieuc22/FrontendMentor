@@ -1,45 +1,48 @@
-# Astro Starter Kit: Minimal
+# Frontend Mentor - News homepage solution
 
-```
-npm create astro@latest -- --template minimal
-```
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+## Table of contents
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## 🚀 Project Structure
+## Overview
 
-Inside of your Astro project, you'll see the following folders and files:
+### The challenge
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Users should be able to:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+- **Bonus**: Toggle the mobile menu (requires some JavaScript)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### Screenshot
 
-Any static assets, like images, can be placed in the `public/` directory.
+<!-- [<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
 
-## 🧞 Commands
+[<img src="./Screenshot_hover.png" height="450px"/>](./Screenshot_hover.png)
 
-All commands are run from the root of the project, from a terminal:
+[<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
+[<img src="./Screenshot_mobile-modal.png" height="450px"/>](./Screenshot_mobile-modal.png) -->
 
-## 👀 Want to learn more?
+### Links
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/news-homepage-main)
+<!-- - Live Site URL: [GitHub Pages](https://mathieuc22.github.io/project-tracking-intro-component-master/) -->
+
+## My process
+
+### Built with
+
+- [Astro](https://astro.build/) - Build faster websites
+
+## Author
+
+- Frontend Mentor - [Nervous Buffalo](https://www.frontendmentor.io/profile/mathieuc22)
