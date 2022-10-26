@@ -66,10 +66,15 @@ a {
   color: var(--link-color);
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.15s ease-in-out;
 }
 
 a:hover {
   color: var(--hover-color);
+}
+
+a.active {
+  font-weight: bolder;
 }
 
 strong,

@@ -1,5 +1,6 @@
 ---
 import hamburger from "../assets/images/icon-menu.svg";
+import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
@@ -11,11 +12,11 @@ import hamburger from "../assets/images/icon-menu.svg";
       <img src={hamburger} alt="Hamburger menu" />
     </div>
     <div class="nav-links">
-      <a href="/">Home</a>
-      <a href="/">New</a>
-      <a href="/">Popular</a>
-      <a href="/">Trending</a>
-      <a href="/">Categories</a>
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="#">New</HeaderLink>
+      <HeaderLink href="#">Popular</HeaderLink>
+      <HeaderLink href="#">Trending</HeaderLink>
+      <HeaderLink href="#">Categories</HeaderLink>
     </div>
   </nav>
 </header>

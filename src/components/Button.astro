@@ -24,6 +24,8 @@ const isActive = href === Astro.url.pathname.replace(/\/$/, "");
     text-decoration: none;
     margin-top: 1.7rem;
     margin-bottom: 1.25rem;
+    user-select: none;
+    transition: all 0.15s ease-in-out;
   }
   a:hover {
     background-color: var(--background-color-alt);
@@ -31,6 +33,6 @@ const isActive = href === Astro.url.pathname.replace(/\/$/, "");
   }
   a:active {
     position: relative;
-    top: 1px;
+    transform: translateY(1px);
   }
 </style>
