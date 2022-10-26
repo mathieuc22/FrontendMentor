@@ -1,0 +1,69 @@
+---
+---
+
+<aside>
+  <div class="title">
+    <h2>New</h2>
+  </div>
+  <ul class="articles">
+    <li class="article">
+      <div class="title">
+        <h3>Hydrogen VS Electric Cars</h3>
+      </div>
+      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </li>
+    <hr />
+    <li class="article">
+      <div class="title">
+        <h3>The Downsides of AI Artistry</h3>
+      </div>
+      <p>
+        What are the possible adverse effects of on-demand AI image generation?
+      </p>
+    </li>
+    <hr />
+    <li class="article">
+      <div class="title">
+        <h3>Is VC Funding Drying Up?</h3>
+      </div>
+      <p>
+        Private funding by VC firms is down 50% YOY. We take a look at what that
+        means.
+      </p>
+    </li>
+  </ul>
+</aside>
+
+<style scoped>
+  aside {
+    background-color: var(--background-color-alt);
+    color: var(--text-color-alt);
+    padding: 20px;
+  }
+  .title h2 {
+    color: var(--heading-color-alt);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+  }
+  .title h3 {
+    color: var(--background-color);
+    font-size: 1.3rem;
+  }
+  .article {
+    background-color: var(--background-color-alt);
+    padding-top: 1.6rem;
+    padding-bottom: 2rem;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid var(--text-color-alt);
+    margin: 0;
+    height: 1px;
+  }
+  @media screen and (min-width: 1024px) {
+    aside {
+      min-width: 350px;
+    }
+  }
+</style>
