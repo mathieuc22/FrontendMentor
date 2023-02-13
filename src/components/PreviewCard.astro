@@ -13,7 +13,7 @@ const { number, illustration, title, subtitle } = Astro.props;
   <div class="card__illustration">
     <img src={illustration} alt="Article illustration" />
   </div>
-  <div class=".card__content">
+  <div class="card__content">
     <div class="card__number">{number}</div>
     <div class="card__title">{title}</div>
     <div class="card__subtitle">{subtitle}</div>
@@ -21,30 +21,34 @@ const { number, illustration, title, subtitle } = Astro.props;
 </div>
 
 <style scoped>
-  @media screen and (min-width: 1024px) {
-    .card {
-      flex: 1;
-      display: flex;
-      max-height: 130px;
-      cursor: pointer;
-    }
-    img {
-      max-height: 100%;
-    }
-    .card__number {
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: normal;
-      color: var(--text-color-alt);
-    }
-    .card__title {
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--heading-color);
-      transition: all 0.15s ease-in-out;
-    }
-    .card:hover .card__title {
-      color: var(--hover-color);
-    }
+  .card {
+    flex: 1;
+    display: flex;
+    cursor: pointer;
+    gap: 1.5rem;
+  }
+  img {
+    max-height: 100%;
+  }
+  .card__illustration {
+    width: 30%;
+  }
+  .card__content {
+    width: 70%;
+  }
+  .card__number {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--text-color-alt);
+  }
+  .card__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    transition: all 0.15s ease-in-out;
+  }
+  .card:hover .card__title {
+    color: var(--hover-color);
   }
 </style>
