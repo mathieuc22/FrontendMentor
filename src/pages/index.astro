@@ -3,6 +3,11 @@ import Aside from "../components/Aside.astro";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import HeroArticle from "../components/HeroArticle.astro";
+import PreviewCard from "../components/PreviewCard.astro";
+
+import RetroPcs from "../assets/images/image-retro-pcs.jpg";
+import TopLaptops from "../assets/images/image-top-laptops.jpg";
+import GamingGrowth from "../assets/images/image-gaming-growth.jpg";
 ---
 
 <!DOCTYPE html>
@@ -16,14 +21,35 @@ import HeroArticle from "../components/HeroArticle.astro";
       <HeroArticle />
       <Aside />
     </div>
-    01 Reviving Retro PCs What happens when old PCs are given modern upgrades? 02
-    Top 10 Laptops of 2022 Our best picks for various needs and budgets. 03 The Growth
-    of Gaming How the pandemic has sparked fresh opportunities.
+    <div class="preview-cards">
+      <PreviewCard
+        number="01"
+        illustration={RetroPcs}
+        title="Reviving Retro PCs"
+        subtitle="What happens when old PCs are given modern upgrades?"
+      />
+      <PreviewCard
+        number="02"
+        illustration={TopLaptops}
+        title="Top 10 Laptops of 2022"
+        subtitle="Our best picks for various needs and budgets."
+      />
+      <PreviewCard
+        number="03"
+        illustration={GamingGrowth}
+        title="The Growth of Gaming"
+        subtitle="How the pandemic has sparked fresh opportunities."
+      />
+    </div>
     <style scoped>
       @media screen and (min-width: 1024px) {
         .wrapper {
           display: flex;
           gap: 2rem;
+        }
+        .preview-cards {
+          margin-top: 2rem;
+          display: flex;
         }
       }
     </style>
