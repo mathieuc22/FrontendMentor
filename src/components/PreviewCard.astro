@@ -26,6 +26,7 @@ const { number, illustration, title, subtitle } = Astro.props;
       flex: 1;
       display: flex;
       max-height: 130px;
+      cursor: pointer;
     }
     img {
       max-height: 100%;
@@ -40,6 +41,10 @@ const { number, illustration, title, subtitle } = Astro.props;
       font-size: 1.2rem;
       font-weight: 700;
       color: var(--heading-color);
+      transition: all 0.15s ease-in-out;
+    }
+    .card:hover .card__title {
+      color: var(--hover-color);
     }
   }
 </style>
