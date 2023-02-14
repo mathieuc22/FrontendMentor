@@ -20,22 +20,22 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- **Bonus**: Toggle the mobile menu (requires some JavaScript)
+- Toggle the mobile menu
 
 ### Screenshot
 
-<!-- [<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
+[<img src="./Screenshot_desktop.png" height="450px"/>](./Screenshot_desktop.png)
 
 [<img src="./Screenshot_hover.png" height="450px"/>](./Screenshot_hover.png)
 
 [<img src="./Screenshot_mobile.png" height="450px"/>](./Screenshot_mobile.png)
 
-[<img src="./Screenshot_mobile-modal.png" height="450px"/>](./Screenshot_mobile-modal.png) -->
+[<img src="./Screenshot_mobile-modal.png" height="450px"/>](./Screenshot_mobile-modal.png)
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/news-homepage-main)
-<!-- - Live Site URL: [GitHub Pages](https://mathieuc22.github.io/project-tracking-intro-component-master/) -->
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/news-homepage-main)
+- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/FrontendMentor/project-tracking-intro-component-master/)
 
 ## My process
 
