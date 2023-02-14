@@ -10,10 +10,10 @@ import Button from "./Button.astro";
     <img class="desktop" src={HeroImageDesktop} alt="Article illustration" />
   </div>
   <div class="content">
-    <div class="column title">
+    <div class="column column--title">
       <h1>The Bright Future of Web 3.0?</h1>
     </div>
-    <div class="column">
+    <div class="column column--text">
       <p>
         We dive into the next evolution of the web that claims to put the power
         of the platforms back into the hands of the people. But is it really
@@ -27,6 +27,19 @@ import Button from "./Button.astro";
 <style scoped>
   .desktop {
     display: none;
+  }
+  .illustration {
+    text-align: center;
+  }
+  .column--title h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    line-height: 2.7rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.6rem;
+  }
+  .column--text p {
+    margin-bottom: 2rem;
   }
 
   @media screen and (min-width: 1024px) {
@@ -49,9 +62,18 @@ import Button from "./Button.astro";
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
+      padding-top: 1rem;
     }
-    p {
-      margin-top: 1.25rem;
+    .column--title h1 {
+      font-size: 3.75rem;
+      line-height: 3.75rem;
+    }
+    .column--text {
+      margin-top: 1rem;
+      margin-left: 2rem;
+    }
+    .column--text p {
+      margin-bottom: unset;
     }
   }
 </style>

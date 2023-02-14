@@ -49,7 +49,7 @@ body {
   background-color: var(--background-color);
   word-wrap: break-word;
   overflow-wrap: break-word;
-  line-height: 1.72;
+  line-height: 1.58;
   color: var(--text-color);
 }
 
@@ -78,10 +78,6 @@ a:hover {
   color: var(--hover-color);
 }
 
-a.active {
-  font-weight: bolder;
-}
-
 strong,
 b {
   color: var(--heading-color);
@@ -101,21 +97,8 @@ img {
   text-decoration: none;
 }
 
-.title h1 {
-  font-size: 2.6rem;
-  font-weight: 800;
-  line-height: 2.7rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.1rem;
-}
-
 @media screen and (min-width: 1024px) {
   body {
-    padding: 5.9rem 11rem;
-  }
-
-  .title h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    padding: 5.8rem 11rem;
   }
 }

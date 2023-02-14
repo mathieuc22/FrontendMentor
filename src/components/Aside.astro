@@ -26,13 +26,15 @@ import NewCard from "./NewCard.astro";
   aside {
     background-color: var(--background-color-alt);
     color: var(--text-color-alt);
-    padding: 20px;
+    padding: 0 1.6rem;
+    margin-bottom: 2rem;
   }
   .title {
     color: var(--heading-color-alt);
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 700;
-    line-height: 2.7rem;
+    line-height: 2.9rem;
+    padding-top: 1.3rem;
   }
   hr {
     border: 0;
@@ -43,6 +45,14 @@ import NewCard from "./NewCard.astro";
   @media screen and (min-width: 1024px) {
     aside {
       min-width: 350px;
+      margin-bottom: unset;
+    }
+    .title {
+      color: var(--heading-color-alt);
+      font-size: 2.65rem;
+      font-weight: 700;
+      line-height: 2.9rem;
+      padding-top: 2.1rem;
     }
   }
 </style>
