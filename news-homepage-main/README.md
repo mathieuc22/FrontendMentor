@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/news-homepage-main)
-- Live Site URL: [GitHub Pages](https://mathieuc22.github.io/FrontendMentor/project-tracking-intro-component-master/)
+- Solution URL: [GitHub repo](https://github.com/mathieuc22/FrontendMentor/tree/main/news-homepage-main)
+- Live Site URL: [Netlify](https://flourishing-brigadeiros-501af9.netlify.app/)
 
 ## My process
 
